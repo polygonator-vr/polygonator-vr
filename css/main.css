@@ -352,6 +352,10 @@ img {
 		text-align: left;
 	}
 
+	
+	.main-page-services__list {
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 480px) {
