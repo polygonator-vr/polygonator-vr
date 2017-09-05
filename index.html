@@ -6,26 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet" >
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/main.js"></script>
 </head>
 <body>
 	<section class="header">
 		<div class="container">
 			<div class="header__container">
 				<div class="header__logo-wrap">
-					<img src="img/logo.png" class="header__logo">
+					<img src="img/logo.svg" class="header__logo">
 				</div>
-				<ul class="header-menu">
+				
+				<button class="header-menu-toggle only-mobile" onclick="toggleMenu()">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+				
+				<ul class="header-menu" id="header-menu">
 					<li class="header-menu__item">
-						<a class="header-menu__link">ABOUT</a>
+						<a href="#" class="header-menu__link">ABOUT</a>
 					</li>
 					<li class="header-menu__item">
-						<a class="header-menu__link">CONTACTS</a>
+						<a href="#" class="header-menu__link">CONTACTS</a>
+					</li> 
+					<li class="header-menu__item">
+						<a href="#" class="header-menu__link">SERVICES</a>
 					</li>
 					<li class="header-menu__item">
-						<a class="header-menu__link">SERVICES</a>
-					</li>
-					<li class="header-menu__item">
-						<a class="header-menu__link">BLOG</a>
+						<a href="#" class="header-menu__link">BLOG</a>
 					</li>
 				</ul>
 			</div>
