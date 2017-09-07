@@ -303,7 +303,7 @@ img {
 		display: block;
 		text-align: center;
 		width: 100%;
-		margin-bottom: 2rem;
+		margin-bottom: 0;
 	}
 
 	.header-menu {
@@ -331,7 +331,7 @@ img {
 	}
 
 	.main-page-hero {
-	    height: calc(100vh - 97px);
+	    height: calc(100vh - 80px);
 	}
 
 	.main-page-services__item {
