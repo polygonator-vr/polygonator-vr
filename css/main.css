@@ -39,11 +39,12 @@ img {
 .header__logo-wrap {
 	display: inline-block;
 	vertical-align: top;
-	width: 200px;
 }
 
-.header__logo {
-}	
+.logo {
+	width: 200px;
+	height: auto;
+}
 
 .header-menu {
 	display: inline-block;
@@ -75,7 +76,6 @@ img {
 }
 
 .header__logo {
-	max-width: 200px;
     display: block;
     margin: 0 auto;
 }
@@ -129,6 +129,11 @@ img {
 	padding: 0;
 	text-decoration: none;
 	text-align: center;
+}
+
+.main-page-services__image {
+	height: 64px;
+	width: auto;
 }
 
 .main-page-services__title {
@@ -230,7 +235,7 @@ img {
 
 .footer__column {
 	display: inline-block;
-	width: calc(100% / 6);
+	width: calc(100% / 5);
 	vertical-align: top;
 	text-align: center
 }
@@ -258,6 +263,7 @@ img {
 
 .footer__link {
 	text-decoration: none;
+	color: #000;
 }
 
 .copyright {
@@ -269,17 +275,20 @@ img {
 
 .footer__logo {
 	width: 100%;
-	max-width: 190px;
 }
 
-.footer__social {
+.footer-social {
 	width: 100%;
 	max-width: 190px;
 }
 
-.footer__social a {
+.footer-social a {
 	display: inline-block;
 	margin: .5rem 1.1rem;
+}
+
+.footer-social__img {
+	width: 15px;
 }
 
 .only-mobile {
@@ -289,6 +298,17 @@ img {
 @media (max-width: 767px) {
 	.header {
 		padding: 2rem 0;
+		height: 10vh;
+		box-sizing: border-box;
+	}
+
+
+	.main-page-services__main-title {
+		margin-bottom: 2rem;
+	}
+
+	.main-page-services__title {
+		margin-top: 2rem;
 	}
 
 	.header .container {
@@ -304,6 +324,7 @@ img {
 
 	.header-menu {
 		width: 100%;
+		margin-top: 15px;
 	}
 
 	.header-menu__item {
@@ -314,6 +335,9 @@ img {
 		height: 47px;
     	line-height: 47px;
     	padding-top: 0;
+    	position: relative;
+    	z-index: 30;
+    	background: #fff;
 	}
 
 
@@ -327,9 +351,10 @@ img {
 	}
 
 	.main-page-hero {
-	    height: calc(100vh - 91px);
+	    height: 90vh;
 		max-width: 100%; /* Ограничиваем ширину картинки шириной экрана. */
 		object-fit: cover;
+		box-sizing: border-box;
 	}
 
 	.main-page-services__item {
@@ -374,14 +399,13 @@ img {
 	.footer__column {
 		width: 50%;
 		padding: 2rem 0;
+		text-align: left;
 	}
 
 	.footer__column:nth-child(3) {
 		width: 100%;
-		text-align: left;
 	}
 
-	
 	.main-page-services__list {
 		margin: 0 auto;
 	}
@@ -403,6 +427,22 @@ img {
 	.only-mobile {
 		display: block;
 	}
+
+	.main-page-about__content {
+		text-align: center;
+	}
+
+	.main-page__title {
+		text-align: center;
+	}
+
+	.main-page__title:after {
+		margin: 2rem auto 0;
+	}
+
+	.main-page__description {
+		text-align: center;
+	}
 }
 
 @media (max-width: 480px) {
@@ -419,7 +459,7 @@ img {
 		right: 10px;
 	}
 
-	.header__logo {
+	.logo {
 		max-width: 155px; 
 	}
 }

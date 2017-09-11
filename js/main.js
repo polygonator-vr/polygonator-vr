@@ -1,8 +1,14 @@
 function toggleMenu() {
-    var x = document.getElementById('header-menu');
-    if (x.clientHeight == 0) {
-        x.style.display = 'block';
+	var header = document.getElementById('header');
+    var headerMenu = document.getElementById('header-menu');
+    var mainPageHero = document.getElementById('main-page-hero');
+    if (headerMenu.clientHeight == 0) {
+        headerMenu.style.display = 'block';
+        header.style.height = '40vh';
+        mainPageHero.style.height = '60vh';
     } else {
-        x.style.display = 'none';
+        headerMenu.style.display = 'none';
+        header.style.height = '10vh';
+        mainPageHero.style.height = '90vh';
     }
 }
