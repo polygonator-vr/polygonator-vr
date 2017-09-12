@@ -4,8 +4,7 @@ function toggleMenu() {
     var mainPageHero = document.getElementById('main-page-hero');
     if (headerMenu.clientHeight == 0) {
         headerMenu.style.display = 'block';
-        header.style.height = '40vh';
-        mainPageHero.style.height = '60vh';
+        header.style.height = 'auto';
     } else {
         headerMenu.style.display = 'none';
         header.style.height = '10vh';
