@@ -1,0 +1,53 @@
+.content-contact {
+	font-size: 0;
+}
+
+.contact__form-wrap {
+	display: inline-block;
+	vertical-align: top;
+	width: 35%
+}
+
+.contact__cities-wrap {
+	display: inline-block;
+	vertical-align: top;	
+	width: 55%;
+}
+
+.contact-form__item {
+	margin-top: 3rem;
+	border-bottom: 1px solid #ccc;
+}
+
+.contact-form__item input,
+.contact-form__item textarea {
+	padding-left: 1.5rem;
+	line-height: 3rem;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	width: 100%;
+	max-width: 100%;
+}
+
+.contact-form__button button {
+	margin-top: 5rem;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	display: block;
+	background: #fff;
+	padding: 20px 75px;
+	border: 1px solid #c69c6d;
+	cursor: pointer;
+}
+
+.contact-form-label {
+	margin-top: 5rem; 
+	font-size: 1.1rem;
+}
+
+@media (max-width: 767px) {
+	.contact__form-wrap {
+		width: 100%;
+	}
+}
