@@ -11,3 +11,19 @@ function toggleMenu() {
         mainPageHero.style.height = '90vh';
     }
 }
+
+// vanilla JS
+// init with element
+var grid = document.querySelector('.services');
+var msnry = new Masonry( grid, {
+    // options...
+    itemSelector: '.services__image-wrap',
+    columnWidth: 310,
+    gutter: 15,
+    percentPosition: true
+});
+
+// // init with selector
+// var msnry = new Masonry( '.services', {
+//     // options...
+// });

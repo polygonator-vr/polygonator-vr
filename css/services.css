@@ -1,0 +1,27 @@
+.services {
+    display: block;
+    font-size: 0;
+    /*margin: 0 -1.5rem;*/
+}
+
+.services__image-wrap {
+    display: inline-block;
+    font-size: 0;
+    box-sizing: border-box;
+    /*padding: 1.5rem;*/
+    margin: 1.5rem 0;
+}
+
+.services__image-wrap_2 {
+    width: 620px;
+}
+
+.services__image-wrap_1 {
+    width: 310px;
+}
+
+.services__image {
+    width: auto;
+}
+
+
