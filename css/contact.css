@@ -1,26 +1,48 @@
 .content-contact {
 	font-size: 0;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .contact__form-wrap {
 	display: inline-block;
 	vertical-align: top;
-	width: 35%
+	width: 40%;
+	box-sizing: border-box;
+	padding-right: 6rem;
 }
 
 .contact__cities-wrap {
 	display: inline-block;
 	vertical-align: top;	
-	width: 55%;
+	width: 60%;
+	box-sizing: border-box;
 }
 
 .contact-form__item {
-	margin-top: 3rem;
+	margin-top: 1rem;
 	border-bottom: 1px solid #ccc;
+}
+
+.contact__title {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 8rem;
+}
+
+.contact__subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: 4rem 0 3rem;
 }
 
 .contact-form__item input,
 .contact-form__item textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	padding-left: 1.5rem;
 	line-height: 3rem;
 	font-size: 1.1rem;
@@ -28,9 +50,22 @@
 	outline: none;
 	width: 100%;
 	max-width: 100%;
+	background: transparent;
+}
+
+.contact-form__item_textarea {
+	background: linear-gradient(#ccc, transparent 1px) top center;
+	background-size: 3rem 3rem;
+	background-position-y: 29px;
+}
+
+.contact-form__item textarea {
+    height: 9rem;
 }
 
 .contact-form__button button {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	margin-top: 5rem;
 	font-size: 1.4rem;
 	text-transform: uppercase;
@@ -42,12 +77,45 @@
 }
 
 .contact-form-label {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	margin-top: 5rem; 
 	font-size: 1.1rem;
 }
 
+
+.contact__cities-wrap {
+	display: inline-block;
+	font-size: 0;
+}
+
+.contact-city {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	width: 50%;
+	display: inline-block;
+	font-size: 10px;
+	vertical-align: top;
+	padding-left: 6rem;
+	box-sizing: border-box;
+}
+
+.contact-city__text {
+	line-height: 2;
+	text-transform: uppercase;
+}
+
 @media (max-width: 767px) {
 	.contact__form-wrap {
+		width: 100%;
+	}
+
+	.contact-city {
+		width: 100%;
+		padding: 0;
+	}
+
+	.contact__cities-wrap { 
 		width: 100%;
 	}
 }
