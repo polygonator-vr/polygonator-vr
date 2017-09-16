@@ -6,7 +6,7 @@
 .contact__form-wrap {
 	display: inline-block;
 	vertical-align: top;
-	width: 40%;
+	width: calc(100% / 3);
 	box-sizing: border-box;
 	padding-right: 6rem;
 }
@@ -14,7 +14,7 @@
 .contact__cities-wrap {
 	display: inline-block;
 	vertical-align: top;	
-	width: 60%;
+	width:  calc(100% / 3 * 2);
 	box-sizing: border-box;
 }
 
