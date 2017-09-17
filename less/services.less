@@ -10,10 +10,57 @@
         box-sizing: border-box;
         padding: 1.5rem;
         width: 50%;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            &:after {
+                display: block;
+                cursor: pointer;
+            }
+
+            .services-description {
+                display: block;
+            }
+        }
+
+        &:after {
+            content: "";
+            display: none;
+            position: absolute;
+            top: 1.5rem;
+            right:  1.5rem;
+            bottom:  1.5rem;
+            left:  1.5rem;
+            background: #000;
+            opacity: 0.5;
+            z-index: 2;
+        }
     }
 
     &__image {
         width: auto;
+    }
+}
+
+.services-description {
+    z-index: 3;
+    display: none;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+
+    &__title {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+
+    &__subtitle {
+        font-size: 1.2rem;
     }
 }
 
