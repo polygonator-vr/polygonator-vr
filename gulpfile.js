@@ -1,23 +1,22 @@
-var gulp = require('gulp');
-var minifyCss = require('gulp-minify-css');
-var less = require('gulp-less');
-var sourcemaps = require('gulp-sourcemaps');
+var gulp = require('gulp'),
+    minifyCss = require('gulp-minify-css'),
+    less = require('gulp-less'),
+    concat = require('gulp-concat');
 
 var paths = {
-    less: ['less/*.less']
+    less: ['./less/**/*.less']
 };
 
 gulp.task('less', function () {
     return gulp.src('./less/**/*.less')
-        .pipe(sourcemaps.init())
         .pipe(less())
-        .pipe(sourcemaps.write())
+        .pipe(concat('style.css'))
         .pipe(minifyCss())
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./css/'));
 });
 
 gulp.task('watcher',function(){
     gulp.watch(paths.less, ['less']);
 });
 
-gulp.task('default', ['watcher']);
+gulp.task('default', ['less', 'watcher']);

@@ -270,7 +270,6 @@ img {
 		width: 100%;
         max-width: 200px;
 	}
-
 }
 
 .copyright {
@@ -304,115 +303,120 @@ img {
 		padding: 2rem 0;
 		height: 10vh;
 		box-sizing: border-box;
+
+        .container {
+            padding: 0;
+        }
+
+        &__logo-wrap	{
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0;
+        }
 	}
 
+    .main-page-services {
+        &__main-title {
+            margin-bottom: 2rem;
+        }
 
-	.main-page-services__main-title {
-		margin-bottom: 2rem;
-	}
+        &__title {
+            margin-top: 2rem;
+        }
 
-	.main-page-services__title {
-		margin-top: 2rem;
-	}
+        &__item {
+            margin: 2rem 0;
+            width: 50%;
+        }
 
-	.header .container {
-		padding: 0;
-	}
-
-	.header__logo-wrap	{
-		display: block;
-		text-align: center;
-		width: 100%;
-		margin-bottom: 0;
-	}
+        &__list {
+            margin: 0 auto;
+        }
+    }
 
 	.header-menu {
 		width: 100%;
 		margin-top: 15px;
-	}
 
-	.header-menu__item {
-		display: block;
-		text-align: center;
-		margin: 0;
-		border-bottom: 1px solid #ccc;
-		height: 47px;
-    	line-height: 47px;
-    	padding-top: 0;
-    	position: relative;
-    	z-index: 30;
-    	background: #fff;
-	}
+        &__item {
+            display: block;
+            text-align: center;
+            margin: 0;
+            border-bottom: 1px solid #ccc;
+            height: 47px;
+            line-height: 47px;
+            padding-top: 0;
+            position: relative;
+            z-index: 30;
+            background: #fff;
 
+            &:first-child {
+                border-top: 1px solid #ccc;
+            }
+        }
 
-	.header-menu__item:first-child {
-		border-top: 1px solid #ccc;
-	}
-
-	.header-menu__link {
-		color: #000;
-		display: block;
-	}
+        &__link {
+            color: #000;
+            display: block;
+        }
+    }
 
 	.main-page-hero {
 	    height: 90vh;
 		max-width: 100%; /* Ограничиваем ширину картинки шириной экрана. */
 		object-fit: cover;
 		box-sizing: border-box;
+
+        &__title {
+            margin-top: 2.5rem;
+            font-size: 4.5rem;
+            margin-bottom: 2rem;
+        }
+
+        &__subtitle {
+            line-height: 1.3;
+        }
 	}
 
-	.main-page-services__item {
-		margin: 2rem 0;
-	}
-	.main-page-hero__title {
-    	margin-top: 2.5rem;
-    	font-size: 4.5rem;
-    	margin-bottom: 2rem;
+    .main-page-about {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__image-wrap {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        &__content {
+            width: 100%;
+            max-width: 480px;
+            padding: 0;
+            margin: 2rem auto;
+        }
+
+        &__container {
+            margin: 0 auto;
+        }
+
+        &__content {
+            text-align: center;
+        }
     }
 
-    .main-page-hero__subtitle {
-		line-height: 1.3;
-	}
+    .footer {
+        &__column {
+            width: 50%;
+            padding: 2rem 0;
+            text-align: left;
 
-	.main-page-services__item { 
-		width: 50%;
-	}
-
-	.main-page-about__container {
-		flex-direction: column;
-	}
-
-	.main-page-about__image-wrap {
-		width: 100%;
-		max-width: 480px;
-		text-align: center;
-	}
-
-	.main-page-about__content {
-		width: 100%;
-		max-width: 480px;
-		padding: 0;
-		margin: 2rem auto;
-	}
-
-	.main-page-about__container {
-		margin: 0 auto;
-	}
-
-
-	.footer__column {
-		width: 50%;
-		padding: 2rem 0;
-		text-align: left;
-	}
-
-	.footer__column:nth-child(3) {
-		width: 100%;
-	}
-
-	.main-page-services__list {
-		margin: 0 auto;
-	}
+            &:nth-child(3) {
+                width: 100%;
+            }
+        }
+    }
 
 	.header-menu-toggle {
 		position: absolute;
@@ -432,31 +436,33 @@ img {
 		display: block;
 	}
 
-	.main-page-about__content {
-		text-align: center;
-	}
+    .main-page {
+        &__title {
+            text-align: center;
 
-	.main-page__title {
-		text-align: center;
-	}
+            &:after {
+                margin: 2rem auto 0;
+            }
+        }
 
-	.main-page__title:after {
-		margin: 2rem auto 0;
-	}
-
-	.main-page__description {
-		text-align: center;
-	}
+        &__description {
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width: 480px) {
-	.main-page-hero__title {
-	    font-size: 4rem;
-	}
+	.main-page-hero {
+        &__title {
+            font-size: 4rem;
+        }
+    }
 
-	.main-page-services__item { 
-		width: 100%;
-	}
+    .main-page-services {
+        &__item {
+            width: 100%;
+        }
+    }
 
 	.header-menu-toggle {
 		top: 22px;
