@@ -3,19 +3,38 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-.contact__form-wrap {
-	display: inline-block;
-	vertical-align: top;
-	width: calc(100% / 3);
-	box-sizing: border-box;
-	padding-right: 6rem;
-}
+.contact {
+	&__form-wrap {
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% / 3);
+		box-sizing: border-box;
+		padding-right: 6rem;
+	}
 
-.contact__cities-wrap {
-	display: inline-block;
-	vertical-align: top;	
-	width:  calc(100% / 3 * 2);
-	box-sizing: border-box;
+	&__cities-wrap {
+		display: inline-block;
+		vertical-align: top;
+		width:  calc(100% / 3 * 2);
+		box-sizing: border-box;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 24px;
+		font-weight: 300;
+		margin-top: 8rem;
+	}
+
+	&__subtitle {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		text-transform: uppercase;
+		margin: 4rem 0 3rem;
+	}
+
 }
 
 .contact-form__item {
@@ -23,21 +42,6 @@
 	border-bottom: 1px solid #ccc;
 }
 
-.contact__title {
-	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
-	font-weight: 600;
-	margin-top: 8rem;
-}
-
-.contact__subtitle {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	font-size: 14px;
-	text-transform: uppercase;
-	margin: 4rem 0 3rem;
-}
 
 .contact-form__item input,
 .contact-form__item textarea {
@@ -101,6 +105,7 @@
 }
 
 .contact-city__text {
+    font-weight: 300;
 	line-height: 2;
 	text-transform: uppercase;
 }
