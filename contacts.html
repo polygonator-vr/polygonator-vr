@@ -43,21 +43,21 @@
 			<div>
 				<div class="contact__form-wrap">
 					<h2 class="contact__subtitle">We love getting messages</h2>
-					<form class="contact-form">
+					<form class="contact-form" method="post" action="sendmail.php" id="contact">
 						<div class="contact-form__item">
-							<input type="" name="" placeholder="name*">
+							<input type="text" name="name" placeholder="name*">
 						</div>
 						<div class="contact-form__item">
-							<input type="" name="" placeholder="phone number">
+							<input type="text" name="phone" placeholder="phone number">
 						</div>						
 						<div class="contact-form__item">
-							<input type="" name="" placeholder="email*">
+							<input type="text" name="email" placeholder="email*">
 						</div>
 						<div class="contact-form__item contact-form__item_textarea">
-							<textarea placeholder="your message"></textarea>
+							<textarea name="text" placeholder="your message"></textarea>
 						</div>
 						<div class="contact-form__button">
-							<button>Send</button>
+							<button type="submit">Send</button>
 						</div>
 					</form>
 					<div class="contact-form-label">
@@ -199,5 +199,22 @@
 		Polygonator.com 2017 © All rights reserved.
 	</section>
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="libs/jquery.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function () {
+	        $("#contact").submit(function(e) {
+	            e.preventDefault();
+	            $.ajax({
+	                type: 'POST',
+	                url: 'sendMail.php',
+	                data: $(this).serialize(),
+	                success: function() {
+	                    alert('Thank you for your message!');
+	                }
+	            });
+	        });
+
+	    });
+</script>
 </body>
 </html>	
