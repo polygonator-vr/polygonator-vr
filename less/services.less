@@ -1,16 +1,27 @@
+.grid {
+    &__item {
+        display: block;
+        width: 50%;
+        height: 300px;
+        float: left;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+}
+
 .services {
-    display: block;
+    display: inline-block;
+    width: 100%;
     font-size: 0;
-    margin: 3.5rem -1.5rem 0;
+    margin: 3.5rem -1rem 0;
 
     &__link {
         display: inline-block;
         vertical-align: top;
         font-size: 0;
         box-sizing: border-box;
-        padding: 1.5rem;
-        width: 50%;
-        position: relative;
+        padding: 0;
+        width: auto;
         z-index: 1;
 
         //&:hover {
@@ -39,7 +50,8 @@
     }
 
     &__image {
-        width: auto;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -120,6 +132,13 @@
             //    left:  1rem;
             //}
         }
+
+        &__image {
+            width: 100%;
+            height: auto;
+            position: static;
+            transform: none;
+        }
     }
 
     .services-top-title {
@@ -139,5 +158,118 @@
     }
     .services-description {
         display: block;
+    }
+}
+
+@supports (display: grid) {
+    html {
+        box-sizing: border-box;
+    }
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+
+    .services {
+        &__link {
+            padding: 0;
+            width: auto;
+        }
+
+        &__image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            max-width: none;
+        }
+    }
+
+
+    .grid {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;  /* three columns */
+        grid-template-rows: minmax(100px, 300px) minmax(100px, 300px);
+
+        &_five {
+            grid-template-areas: "a a b"
+            "c d e";
+        }
+        &_four {
+            grid-template-areas: "f g h"
+            "i i h";
+        }
+    }
+
+    .grid__item {
+        width: auto;
+        height: auto;
+        float: none;
+        background: #fff;
+        padding: 1em;
+        border: 1rem solid #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .grid__item.a {
+        grid-area: a;
+    }
+
+    .grid__item.b {
+        grid-area: b;
+    }
+
+    .grid__item.c {
+        grid-area: c;
+    }
+
+    .grid__item.d {
+        grid-area: d;
+    }
+
+    .grid__item.e {
+        grid-area: e;
+    }
+
+    .grid__item.f {
+        grid-area: f;
+    }
+
+    .grid__item.g {
+        grid-area: g;
+    }
+
+    .grid__item.i {
+        grid-area: i;
+    }
+
+    .grid__item.h {
+        grid-area: h;
+    }
+
+    @media (max-width: 1024px) {
+        .grid {
+            grid-template-rows: 250px 250px 250px 250px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .grid {
+        display: block;
+
+        &__item {
+            width: 100%;
+            height: auto;
+            float: none;
+        }
     }
 }
