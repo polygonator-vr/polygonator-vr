@@ -71,30 +71,36 @@
         function printImages($paths) {
             $allowed_types=array("jpg", "png", "gif");  //разрешеные типы изображений
             $all_files = array();
+            $all_files_small = array();
 
             foreach ($paths as $path) {
                 $dir_handle = @opendir($path) or die("Ошибка при открытии папки !!!");
                 $files = scandir($path);
+                $files_small = scandir($path);
 
                 $len = count($files);
                 for ($i = 0; $i < $len; $i++) {
                     if($files[$i] == "." || $files[$i] == "..") continue;  //пропустить ссылки на другие папки
+
+                    $files_small[$i] = $path.'_min/'.$files[$i];
                     $files[$i] = $path.'/'.$files[$i];
                 }
                 $all_files = array_merge($all_files, $files);
+                $all_files_small = array_merge($all_files_small, $files_small);
             }
 
-            foreach( $all_files as $file) {    //поиск по файлам
-                if($file=="." || $file == "..") continue;  //пропустить ссылки на другие папки
-                $file_parts = explode(".",$file);          //разделить имя файла и поместить его в массив
+            $array_size = count($all_files);
+            for ($i = 0; $i < $array_size; $i++) {    //поиск по файлам
+                if($all_files[$i] == "." || $all_files[$i] == "..") continue;   //пропустить ссылки на другие папки
+                $file_parts = explode(".",$all_files[$i]);          //разделить имя файла и поместить его в массив
                 $ext = strtolower(array_pop($file_parts));   //последний элеменет - это расширение
 
 
                 if(in_array($ext,$allowed_types))
                 {
                     echo '<div class="grid__item">
-                                <a href="'.$file.'" class="services__link js-open-gallery" rel="services-all">
-                                    <img src="'.$file.'" alt="" class="services__image">
+                                <a href="'.$all_files[$i].'" class="services__link js-open-gallery" rel="services-all">
+                                    <img src="'.$all_files_small[$i].'" alt="" class="services__image">
                                 </a>
                          </div>';
                 }
