@@ -18,7 +18,7 @@
             </a>
 
             <button class="header-menu-toggle only-mobile" onclick="toggleMenu()">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <img src="img/menu.svg" class="header-menu-toggle__image">
             </button>
 
             <ul class="header-menu" id="header-menu">
