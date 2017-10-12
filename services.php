@@ -47,16 +47,16 @@
         <div class="services-menu">
             <ul class="services-menu__list">
                 <li class="services-menu__item">
-                    <a href="services.html" class="services-menu__link">All</a>
+                    <a href="services.php" class="services-menu__link  <?php if (!isset($_GET['cat'])) echo 'services-menu__link_active'; ?>">All</a>
                 </li>
                 <li class="services-menu__item">
-                    <a href="services-interactive.html" class="services-menu__link">Interactive Tour</a>
+                    <a href="services.php?cat=interactive" class="services-menu__link <?php if ($_GET['cat'] == 'interactive') echo 'services-menu__link_active'; ?>">Interactive Tour</a>
                 </li>
                 <li class="services-menu__item">
-                    <a href="services-modelling.html" class="services-menu__link">3D Modelling</a>
+                    <a href="services.php?cat=modelling" class="services-menu__link <?php if ($_GET['cat'] == 'modelling') echo 'services-menu__link_active'; ?>">3D Modelling</a>
                 </li>
                 <li class="services-menu__item">
-                    <a href="services-visualization.html" class="services-menu__link services-menu__link_active">Visialisation</a>
+                    <a href="services.php?cat=visualization" class="services-menu__link <?php if ($_GET['cat'] == 'visualization') echo 'services-menu__link_active'; ?>">Visialisation</a>
                 </li>
                 <li class="services-menu__item">
                     <a href="#" class="services-menu__link">Animation</a>
@@ -67,10 +67,69 @@
 
     <section class="services">
         <div class="grid">
-            <div class="grid__item f"><a href="img/services/visualization/001.jpg" class="services__link js-open-gallery" rel="services-all"><img src="img/services/visualization_min/001.jpg" alt="" class="services__image"></a></div>
-            <div class="grid__item g"><a href="img/services/visualization/002.jpg" class="services__link js-open-gallery" rel="services-all"><img src="img/services/visualization_min/002.jpg" alt="" class="services__image"></a></div>
-            <div class="grid__item h"><a href="img/services/visualization/003.jpg" class="services__link js-open-gallery" rel="services-all"><img src="img/services/visualization_min/003.jpg" alt="" class="services__image"></a></div>
-            <div class="grid__item i"><a href="img/services/visualization/004.jpg" class="services__link js-open-gallery" rel="services-all"><img src="img/services/visualization/004.jpg" alt="" class="services__image"></a></div>
+    <?php
+        function printImages($paths) {
+            $allowed_types=array("jpg", "png", "gif");  //разрешеные типы изображений
+            $all_files = array();
+            $all_files_small = array();
+
+            foreach ($paths as $path) {
+                $dir_handle = @opendir($path) or die("Ошибка при открытии папки !!!");
+                $files = scandir($path);
+                $files_small = scandir($path);
+
+                $len = count($files);
+                for ($i = 0; $i < $len; $i++) {
+                    if($files[$i] == "." || $files[$i] == "..") continue;  //пропустить ссылки на другие папки
+
+                    $files_small[$i] = $path.'_min/'.$files[$i];
+                    $files[$i] = $path.'/'.$files[$i];
+                }
+                $all_files = array_merge($all_files, $files);
+                $all_files_small = array_merge($all_files_small, $files_small);
+            }
+
+            $array_size = count($all_files);
+            for ($i = 0; $i < $array_size; $i++) {    //поиск по файлам
+                if($all_files[$i] == "." || $all_files[$i] == "..") continue;   //пропустить ссылки на другие папки
+                $file_parts = explode(".",$all_files[$i]);          //разделить имя файла и поместить его в массив
+                $ext = strtolower(array_pop($file_parts));   //последний элеменет - это расширение
+
+
+                if(in_array($ext,$allowed_types))
+                {
+                    echo '<div class="grid__item">
+                                <a href="'.$all_files[$i].'" class="services__link js-open-gallery" rel="services-all">
+                                    <img src="'.$all_files_small[$i].'" alt="" class="services__image">
+                                </a>
+                         </div>';
+                }
+            }
+            closedir($dir_handle);  //закрыть папку
+        }
+
+        $paths = array(
+            "./img/services/visualization",
+            "./img/services/interactive",
+            "./img/services/modelling",
+        );
+
+        if (isset($_GET['cat'])) {
+            if ($_GET['cat'] == 'visualization') {
+                printImages(array("./img/services/visualization"));
+            } else if ($_GET['cat'] == 'interactive') {
+                printImages(array("./img/services/interactive"));
+            }
+            else if ($_GET['cat'] == 'modelling') {
+                printImages(array("./img/services/modelling"));
+            }
+            else {
+                printImages($paths);
+            }
+        } else {
+            printImages($paths);
+        }
+    ?>
         </div>
     </section>
 </section>
