@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Polygonator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<link href="libs/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<section class="header" id="header">
+		<div class="container">
+			<div class="header__container">
+				<a href="index.html" class="header__logo-wrap">
+					<img src="img/logo.svg" class="logo header__logo">
+				</a>
+				
+				<button class="header-menu-toggle only-mobile" onclick="toggleMenu()">
+					<img src="img/menu.svg" class="header-menu-toggle__image">
+				</button>
+				
+				<ul class="header-menu" id="header-menu">
+					<li class="header-menu__item">
+						<a href="about.html" class="header-menu__link">ABOUT</a>
+					</li>
+					<li class="header-menu__item">
+						<a href="contacts.html" class="header-menu__link header-menu__link_active">CONTACTS</a>
+					</li> 
+					<li class="header-menu__item">
+						<a href="services.html" class="header-menu__link">SERVICES</a>
+					</li>
+					<li class="header-menu__item">
+						<a href="blog.html" class="header-menu__link">BLOG</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="content content-contact">
+		<div class="container">
+			<h1 class="title">CONTACT US</h1>
+			<div>
+				<div class="contact__form-wrap">
+					<h2 class="contact__subtitle">We love getting messages</h2>
+					<form class="contact-form" method="post" action="sendmail.php" id="contact">
+						<div class="contact-form__item">
+							<input type="text" name="name" placeholder="name*">
+						</div>
+						<div class="contact-form__item">
+							<input type="text" name="phone" placeholder="phone number">
+						</div>						
+						<div class="contact-form__item">
+							<input type="text" name="email" placeholder="email*">
+						</div>
+						<div class="contact-form__item contact-form__item_textarea">
+							<textarea name="text" placeholder="your message"></textarea>
+						</div>
+						<div class="contact-form__button">
+							<button type="submit">Send</button>
+						</div>
+					</form>
+					<div class="contact-form-label">
+						Fields with * - required
+					</div>
+				</div>
+				<div class="contact__cities-wrap">
+					<div class="contact-city">
+						<h3 class="contact__subtitle">Russian Federation</h3>
+						<p class="contact-city__text">
+							<strong class="contact-city__name">Viacheslav Timofeev</strong><br>
+							Co-Owner, Marketing & Sales Director<br>
+							+7938 125 9709/+8800 550 2488<br>
+							vt@polygonator.com<br>
+							Skype: live:info_651990<br>
+							<strong class="contact-city__name">Vasily Edushev</strong><br>
+							Founder, Co-Owner, Director, <br>
+							Product Strategy & Development<br>
+							+7938 125 9196<br>
+							ve@polygonator.com
+						</p>
+					</div>
+
+					<div class="contact-city">
+						<h3 class="contact__subtitle">China</h3>
+						<p class="contact-city__text">
+							<strong class="contact-city__name">Mary Pozhidaeva</strong><br>
+							(SEA) Senior Executive Associate<br>
+							+8613018354105<br>
+							mary.p@polygonator.com<br>
+
+							<strong class="contact-city__name">Max Malinin</strong><br>
+							(SEA) Senior Executive Associate<br>
+							+8613110133757<br>
+							max.m@polygonator.com
+						</p>
+					</div>
+
+					<div class="contact-city">
+						<h3 class="contact__subtitle">Greece</h3>
+						<p class="contact-city__text">
+							<strong class="contact-city__name">Anna Voskaki</strong><br>
+							(SEA) Senior Executive Associate<br>
+							+306973020723<br>
+							av@polygonator.com<br>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="container footer__container">
+			<div class="footer__column">
+				<div class="footer__column-content">
+					<div class="footer__title">
+						We offer
+					</div>
+					<br>
+					<div class="footer__description">
+						<a href="" class="footer__link">Ineractive VR</a><br>
+						<a href="" class="footer__link">3D Modelling</a><br>
+						<a href="" class="footer__link">Visialisation</a><br>
+						<a href="" class="footer__link">Animation</a><br>
+					</div>
+				</div>
+				<div class="footer__column-content">
+					<div class="footer__title">
+						Get in touch
+					</div>
+					<br>
+					<div class="footer__description">
+						<a href="" class="footer__link">Russia</a><br>
+						<a href="" class="footer__link">Greece</a><br>
+						<a href="" class="footer__link">China</a><br>
+					</div>
+				</div>
+			</div>
+			<div class="footer__column footer__column_logo">
+				<div class="footer__column-content footer__column-content_logo">
+					<img src="img/logo.svg" class="logo footer__logo">
+					<div class="footer-social">
+						<a href="">
+							<img src="img/facebook.svg" alt="facebook" title="facebook" class="footer-social__img">
+						</a>
+						<a href="">
+							<img src="img/twitter.svg" alt="twitter" title="twitter" class="footer-social__img">
+						</a>
+						<a href="">
+							<img src="img/skype.svg" alt="skype" title="skype" class="footer-social__img">
+						</a>
+						<a href="">
+							<img src="img/linkedin.svg" alt="linkedin" title="linkedin" class="footer-social__img">
+						</a>
+						<a href="">
+							<img src="img/youtube.svg" alt="youtube" title="youtube" class="footer-social__img">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__column">
+				<div class="footer__column-content">
+					<div class="footer__title editable">
+						Media
+					</div>
+					<br>
+					<div class="footer__description">
+						<a href="" class="footer__link">Amazing VR</a><br>
+						<a href="" class="footer__link">Off-plan property</a><br>
+						<a href="" class="footer__link">Why Interactive VR</a><br>
+						<a href="" class="footer__link">How does it work</a><br>
+					</div>
+				</div>
+
+				<div class="footer__column-content">
+					<div class="footer__title">
+						Navigation
+					</div>
+					<br>
+					<div class="footer__description">
+						<a href="about.html" class="footer__link">About</a><br>
+						<a href="contacts.html" class="footer__link">Contacts</a><br>
+						<a href="services.html" class="footer__link">Services</a><br>
+						<a href="" class="footer__link">Blog</a><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="copyright">
+		Polygonator.com 2017 © All rights reserved.
+	</section>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="libs/jquery.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function () {
+	        $("#contact").submit(function(e) {
+	            e.preventDefault();
+	            $.ajax({
+	                type: 'POST',
+	                url: 'sendMail.php',
+	                data: $(this).serialize(),
+	                success: function() {
+	                    alert('Thank you for your message!');
+	                }
+	            });
+	        });
+
+	    });
+</script>
+</body>
+</html>	

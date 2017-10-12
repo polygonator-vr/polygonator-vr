@@ -1,0 +1,255 @@
+.grid {
+    width: 100%;
+    display: inline-block;
+
+    &__item {
+        display: block;
+        width: 47%;
+        margin: 10px 1%;
+        height: 300px;
+        float: left;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+}
+
+.services {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    margin: 3.5rem -1rem 0;
+
+    &__link {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 0;
+        box-sizing: border-box;
+        padding: 0;
+        width: auto;
+        z-index: 1;
+
+        &:hover {
+            &:after {
+                display: block;
+                cursor: pointer;
+            }
+        //
+        //    .services-description {
+        //        display: block;
+        //    }
+        }
+
+        &:after {
+            content: "";
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #000;
+            opacity: 0.5;
+            z-index: 2;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.services-description {
+    z-index: 3;
+    display: none;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+
+    &__title {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+
+    &__subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+.services-top {
+    display: block;
+    font-size: 0;
+}
+
+.services-top-title {
+    display: inline-block;
+    width: 20%;
+}
+
+.services-menu {
+    display: inline-block;
+    width: 80%;
+    text-align: right;
+    font-size: 1.4rem;
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__link {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #000;
+        text-decoration: none;
+        padding: 0 1.5rem;
+
+        &_active {
+            font-weight: 600;
+        }
+    }
+}
+
+
+@supports (display: grid) {
+    html {
+        box-sizing: border-box;
+    }
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+
+    .services {
+        &__link {
+            padding: 0;
+            width: auto;
+        }
+
+        &__image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            max-width: 600px;
+            max-height: 600px;
+        }
+    }
+
+
+    .grid {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;  /* three columns */
+        grid-auto-rows: 300px;
+    }
+
+    .grid__item {
+        width: auto;
+        height: auto;
+        float: none;
+        background: #fff;
+        padding: 1em;
+        border: 1rem solid #fff;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+
+        &:nth-child(9n+2) {
+            grid-column-start: span 2;
+        }
+
+        &:nth-child(9n+8) {
+            grid-row-start: span 2;
+        }
+        &:nth-child(9n+9) {
+            grid-column-start: span 2;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .grid {
+            grid-template-rows: 250px 250px 250px 250px;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .services {
+        text-align: center;
+
+        &__link {
+            display: inline-block;
+            text-align: center;
+            width: auto;
+            max-width: 100%;
+            padding: 0;
+
+
+            //&:after {
+            //    display: block;
+            //    top: 1rem;
+            //    right:  1rem;
+            //    bottom:  1rem;
+            //    left:  1rem;
+            //}
+        }
+
+        &__image {
+            width: 100%;
+            height: auto;
+            position: static;
+            transform: none;
+        }
+    }
+
+    .services-top-title {
+        display: block;
+        width: 100%;
+    }
+
+    .services-menu {
+        display: block;
+        width: 100%;
+
+        &__item {
+            display: block;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    }
+    .services-description {
+        display: block;
+    }
+
+    .services {
+        width: auto;
+        margin: 3.5rem 0 0;
+    }
+
+    .grid {
+        display: block;
+
+        &__item {
+            border: 0;
+            width: 100%;
+            height: auto;
+            float: none;
+            margin: 2rem 0;
+        }
+    }
+
+}
