@@ -1,3 +1,3 @@
 # tours
 
-link: http://oleg-tgn.github.io/tours
+link: http://polygonator.github.io
