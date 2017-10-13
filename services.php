@@ -29,10 +29,10 @@
                     <a href="contacts.html" class="header-menu__link">CONTACTS</a>
                 </li>
                 <li class="header-menu__item">
-                    <a href="services.html" class="header-menu__link header-menu__link_active">SERVICES</a>
+                    <a href="services.php" class="header-menu__link header-menu__link_active">SERVICES</a>
                 </li>
                 <li class="header-menu__item">
-                    <a href="blog.html" class="header-menu__link">BLOG</a>
+                    <a href="_site/blog.html" class="header-menu__link">BLOG</a>
                 </li>
             </ul>
         </div>
