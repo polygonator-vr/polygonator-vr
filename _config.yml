@@ -1,2 +1,3 @@
-source:          .
-destination:     ./_site
+# Where things are
+source: .
+destination: ./_site
