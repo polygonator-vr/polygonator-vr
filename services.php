@@ -179,7 +179,7 @@
                     <a href="#" target="">
                         <img src="img/linkedin.svg" alt="linkedin" title="linkedin" class="footer-social__img">
                     </a>
-                    <a href="https://twitter.com/Polygonator" target="_blank" title="youtube">
+                    <a href="https://www.youtube.com/channel/UCgnoQu-8-FtwLUESbT23ZyA" target="_blank" title="youtube">
                         <img src="img/youtube.svg" alt="youtube" title="youtube" class="footer-social__img">
                     </a>
                 </div>
