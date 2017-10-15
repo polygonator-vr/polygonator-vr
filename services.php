@@ -1,3 +1,8 @@
+<?php if ($_GET['cat'] == 'interactive') {
+	header('Location: /services.php');
+	exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +18,7 @@
 <section class="header" id="header">
     <div class="container">
         <div class="header__container">
-            <a href="index.html" class="header__logo-wrap">
+            <a href="/index.html" class="header__logo-wrap">
                 <img src="img/logo.svg" class="logo header__logo">
             </a>
 
@@ -108,9 +113,9 @@
             closedir($dir_handle);  //закрыть папку
         }
 
+		//"./img/services/interactive",
         $paths = array(
-            "./img/services/visualization",
-            "./img/services/interactive",
+            "./img/services/visualization",            
             "./img/services/modelling",
         );
 
@@ -145,10 +150,10 @@
                 </div>
                 <br>
                 <div class="footer__description">
-                    <a href="" class="footer__link">Ineractive VR</a><br>
-                    <a href="" class="footer__link">3D Modelling</a><br>
-                    <a href="" class="footer__link">Visialisation</a><br>
-                    <a href="" class="footer__link">Animation</a><br>
+                    <a href="/services.php?cat=interactive" class="footer__link">Ineractive VR</a><br>
+                    <a href="/services.php?cat=modelling" class="footer__link">3D Modelling</a><br>
+                    <a href="/services.php?cat=visualization" class="footer__link">Visialisation</a><br>
+                    <a href="/services.php" class="footer__link">Animation</a><br>
                 </div>
             </div>
             <div class="footer__column-content">
@@ -157,15 +162,17 @@
                 </div>
                 <br>
                 <div class="footer__description">
-                    <a href="" class="footer__link">Russia</a><br>
-                    <a href="" class="footer__link">Greece</a><br>
-                    <a href="" class="footer__link">China</a><br>
+                    <a href="/contacts.html" class="footer__link">Russia</a><br>
+                    <a href="/contacts.html" class="footer__link">Greece</a><br>
+                    <a href="/contacts.html" class="footer__link">China</a><br>
                 </div>
             </div>
         </div>
         <div class="footer__column footer__column_logo">
             <div class="footer__column-content footer__column-content_logo">
-                <img src="img/logo.svg" class="logo footer__logo">
+                <a href="/index.html">
+                    <img src="img/logo.svg" class="logo footer__logo">
+                </a>
                 <div class="footer-social">
                     <a href="https://www.facebook.com/polygonator/" target="_blank" title="facebook">
                         <img src="img/facebook.svg" alt="facebook" title="facebook" class="footer-social__img">
@@ -206,10 +213,10 @@
                 </div>
                 <br>
                 <div class="footer__description">
-                    <a href="about.html" class="footer__link">About</a><br>
-                    <a href="contacts.html" class="footer__link">Contacts</a><br>
-                    <a href="services.html" class="footer__link">Services</a><br>
-                    <a href="" class="footer__link">Blog</a><br>
+                    <a href="/about.html" class="footer__link">About</a><br>
+                    <a href="/contacts.html" class="footer__link">Contacts</a><br>
+                    <a href="/services.php" class="footer__link">Services</a><br>
+                    <a href="/_site/blog.html" class="footer__link">Blog</a><br>
                 </div>
             </div>
         </div>
