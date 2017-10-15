@@ -1,3 +1,8 @@
+<?php if ($_GET['cat'] == 'interactive') {
+	header('Location: /services.php');
+	exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +18,7 @@
 <section class="header" id="header">
     <div class="container">
         <div class="header__container">
-            <a href="index.html" class="header__logo-wrap">
+            <a href="/index.html" class="header__logo-wrap">
                 <img src="img/logo.svg" class="logo header__logo">
             </a>
 
@@ -108,9 +113,9 @@
             closedir($dir_handle);  //закрыть папку
         }
 
+		//"./img/services/interactive",
         $paths = array(
-            "./img/services/visualization",
-            "./img/services/interactive",
+            "./img/services/visualization",            
             "./img/services/modelling",
         );
 
@@ -145,10 +150,10 @@
                 </div>
                 <br>
                 <div class="footer__description">
-                    <a href="" class="footer__link">Ineractive VR</a><br>
-                    <a href="" class="footer__link">3D Modelling</a><br>
-                    <a href="" class="footer__link">Visialisation</a><br>
-                    <a href="" class="footer__link">Animation</a><br>
+                    <a href="/services.php?cat=interactive" class="footer__link">Ineractive VR</a><br>
+                    <a href="/services.php?cat=modelling" class="footer__link">3D Modelling</a><br>
+                    <a href="/services.php?cat=visualization" class="footer__link">Visialisation</a><br>
+                    <a href="/services.php" class="footer__link">Animation</a><br>
                 </div>
             </div>
             <div class="footer__column-content">
@@ -165,21 +170,23 @@
         </div>
         <div class="footer__column footer__column_logo">
             <div class="footer__column-content footer__column-content_logo">
-                <img src="img/logo.svg" class="logo footer__logo">
+                <a href="/index.html">
+                    <img src="img/logo.svg" class="logo footer__logo">
+                </a>
                 <div class="footer-social">
-                    <a href="">
+                    <a href="https://www.facebook.com/polygonator/" target="_blank" title="facebook">
                         <img src="img/facebook.svg" alt="facebook" title="facebook" class="footer-social__img">
                     </a>
-                    <a href="">
+                    <a href="https://twitter.com/Polygonator" target="_blank" title="twitter">
                         <img src="img/twitter.svg" alt="twitter" title="twitter" class="footer-social__img">
                     </a>
-                    <a href="">
+                    <a href="skype:info_651990r" target="_blank" title="skype">
                         <img src="img/skype.svg" alt="skype" title="skype" class="footer-social__img">
                     </a>
-                    <a href="">
+                    <a href="#" target="">
                         <img src="img/linkedin.svg" alt="linkedin" title="linkedin" class="footer-social__img">
                     </a>
-                    <a href="">
+                    <a href="https://www.youtube.com/channel/UCgnoQu-8-FtwLUESbT23ZyA" target="_blank" title="youtube">
                         <img src="img/youtube.svg" alt="youtube" title="youtube" class="footer-social__img">
                     </a>
                 </div>
@@ -206,10 +213,10 @@
                 </div>
                 <br>
                 <div class="footer__description">
-                    <a href="about.html" class="footer__link">About</a><br>
-                    <a href="contacts.html" class="footer__link">Contacts</a><br>
-                    <a href="services.html" class="footer__link">Services</a><br>
-                    <a href="" class="footer__link">Blog</a><br>
+                    <a href="/about.html" class="footer__link">About</a><br>
+                    <a href="/contacts.html" class="footer__link">Contacts</a><br>
+                    <a href="/services.php" class="footer__link">Services</a><br>
+                    <a href="/_site/blog.html" class="footer__link">Blog</a><br>
                 </div>
             </div>
         </div>
