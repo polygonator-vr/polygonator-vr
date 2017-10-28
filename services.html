@@ -1,0 +1,13 @@
+---
+layout: services
+title: Services
+---
+<div class="grid">
+    {% for image in site.photo_gallery %}
+        <div class="grid__item">
+            <a href="{{ image.image_path }}" class="services__link js-open-gallery" rel="services-all">
+                <img src="{{ image.image_path }}" alt="{{ image.title }}" class="services__image">
+            </a>
+        </div>
+    {% endfor %}
+</div>
