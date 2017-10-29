@@ -1,245 +1,119 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Polygonator</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-    <link href="libs/font-awesome.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-	<section class="header" id="header">
-		<div class="container">
-			<div class="header__container">
-				<a href="index.html" class="header__logo-wrap test-deploy">
-					<img src="img/logo.svg" class="logo header__logo">
-				</a>
-				
-				<button class="header-menu-toggle only-mobile" onclick="toggleMenu()">
-					<img src="img/menu.svg" class="header-menu-toggle__image">
-				</button>
-				
-				<ul class="header-menu" id="header-menu">
-					<li class="header-menu__item">
-						<a href="/about.html" class="header-menu__link">ABOUT</a>
-					</li>
-					<li class="header-menu__item">
-						<a href="/contacts.html" class="header-menu__link">CONTACTS</a>
-					</li> 
-					<li class="header-menu__item">
-						<a href="/services.php" class="header-menu__link">SERVICES</a>
-					</li>
-					<li class="header-menu__item">
-						<a href="/_site/blog.html" class="header-menu__link">BLOG</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
+---
+layout: default
+title: Home
+---
 
-	<section class="main-page-hero" id="main-page-hero">
-		<div class="container">
-			<h1 class="main-page-hero__title">
-				interactive virtual 3D tours
-			</h1>
-			<h2 class="main-page-hero__subtitle">
-                a wide range of advanced 3d modeling, visualization & animation services
-			</h2>
-		</div>
-	</section>
-
+<section class="main-page-hero" id="main-page-hero">
 	<div class="container">
-		<section class="main-page-services">
-			<h2 class="main-page-services__main-title">
-				our services
-			</h2>
-			<ul class="main-page-services__list">
-				<li class="main-page-services__item">
-                    <a href="/services.php?cat=interactive" title="Interactive VR" class="main-page-services__link">
-                        <img src="img/main/interactive.svg" alt="Interactive VR" title="Interactive VR" class="main-page-services__image">
-                        <h3 class="main-page-services__title">
-                            Interactive VR
-                        </h3>
-                        <p class="main-page-services__description">
-                            Imagine Reality!
-							An extraordinary, innovative and human-centered transformative experience
-							of a design project and its surroundings enabling the user to walk through, interact with space,
-							feel, connect and explore new ways of thinking.
-                        </p>
-                    </a>
-				</li>
-				<li class="main-page-services__item">
-                    <a href="/services.php?cat=modelling" title="3d modeling" class="main-page-services__link">
-                        <img src="img/main/modeling.svg" alt="3d modeling" title="3d modeling" class="main-page-services__image">
-                        <h3 class="main-page-services__title">
-                            3d modeling
-                        </h3>
-                        <p class="main-page-services__description">
-                           
-							An exceptionally complex, challenging and artistic 3D (three-dimensional)
-							digital representation of any surface or object from all angles to a refined and detailed shape
-							using advanced 3D graphics programs.
-                        </p>
-                    </a>
-				</li>
-				<li class="main-page-services__item">
-                    <a href="/services.php?cat=visualization" title="Visualisation" class="main-page-services__link">
-                        <img src="img/main/visualisation.svg" alt="Visualisation" title="Visualisation" class="main-page-services__image">
-                        <h3 class="main-page-services__title">
-                            Visualisation
-                        </h3>
-                        <p class="main-page-services__description">                            
-							An innovative technology combined with human talent that offers high definition
-							computer graphics with top quality photo-realistic views of a product or space
-							before it is created. Visualization today has ever-expanding applications especially in the architectural design, styling, sales and marketing fields being an important aspect 
-							of the product or building development.
-                        </p>
-                    </a>
-				</li>
-				<li class="main-page-services__item">
-                    <a href="/services.php" title="Animation" class="main-page-services__link">
-                        <img src="img/main/animation.svg" alt="Animation" title="Animation" class="main-page-services__image">
-                        <h3 class="main-page-services__title">
-                            Animation
-                        </h3>
-                        <p class="main-page-services__description">
-                            A chain of moving images in a digital environment opening a window in storytelling
-							via illustration art designs extensively used in Media.
-                        </p>
-                    </a>
-				</li>
-			</ul>
-		</section>
+		<h1 class="main-page-hero__title">
+			interactive virtual 3D tours
+		</h1>
+		<h2 class="main-page-hero__subtitle">
+            a wide range of advanced 3d modeling, visualization & animation services
+		</h2>
 	</div>
-	<section class="main-page-about">
-		<div class="container">
-			<div class="main-page-about__container">
-				<div class="main-page-about__image-wrap">
-					<img src="img/main/main-about-us.jpg" class="main-page-about__image">
-				</div>
-				<div class="main-page-about__content">
-					<h3 class="main-page__title">
-						ABOUT US
-					</h3>
-					<p class="main-page__description">
-						We are now able to deliver more timely outcomes for&nbsp;our&nbsp;clients
-						and&nbsp;without compromising quality because the&nbsp;software
-						and&nbsp;the<br>
-						hardware&nbsp;is&nbsp;able to&nbsp;produce what&nbsp;we&nbsp;want.
-					</p>
-					<p class="main-page__description">
-						So that's been a big, huge step forward.
-					</p>
-					<a href="about.html" class="main-page__button">
-						READ MORE
-					</a>
-				</div>
-			</div>
-		</div>
+</section>
+
+<div class="container">
+	<section class="main-page-services">
+		<h2 class="main-page-services__main-title">
+			our services
+		</h2>
+		<ul class="main-page-services__list">
+			<li class="main-page-services__item">
+                <a href="/services.php?cat=interactive" title="Interactive VR" class="main-page-services__link">
+                    <img src="img/main/interactive.svg" alt="Interactive VR" title="Interactive VR" class="main-page-services__image">
+                    <h3 class="main-page-services__title">
+                        Interactive VR
+                    </h3>
+                    <p class="main-page-services__description">
+                        Imagine Reality!
+						An extraordinary, innovative and human-centered transformative experience
+						of a design project and its surroundings enabling the user to walk through, interact with space,
+						feel, connect and explore new ways of thinking.
+                    </p>
+                </a>
+			</li>
+			<li class="main-page-services__item">
+                <a href="/services.php?cat=modelling" title="3d modeling" class="main-page-services__link">
+                    <img src="img/main/modeling.svg" alt="3d modeling" title="3d modeling" class="main-page-services__image">
+                    <h3 class="main-page-services__title">
+                        3d modeling
+                    </h3>
+                    <p class="main-page-services__description">
+                       
+						An exceptionally complex, challenging and artistic 3D (three-dimensional)
+						digital representation of any surface or object from all angles to a refined and detailed shape
+						using advanced 3D graphics programs.
+                    </p>
+                </a>
+			</li>
+			<li class="main-page-services__item">
+                <a href="/services.php?cat=visualization" title="Visualisation" class="main-page-services__link">
+                    <img src="img/main/visualisation.svg" alt="Visualisation" title="Visualisation" class="main-page-services__image">
+                    <h3 class="main-page-services__title">
+                        Visualisation
+                    </h3>
+                    <p class="main-page-services__description">                            
+						An innovative technology combined with human talent that offers high definition
+						computer graphics with top quality photo-realistic views of a product or space
+						before it is created. Visualization today has ever-expanding applications especially in the architectural design, styling, sales and marketing fields being an important aspect 
+						of the product or building development.
+                    </p>
+                </a>
+			</li>
+			<li class="main-page-services__item">
+                <a href="/services.php" title="Animation" class="main-page-services__link">
+                    <img src="img/main/animation.svg" alt="Animation" title="Animation" class="main-page-services__image">
+                    <h3 class="main-page-services__title">
+                        Animation
+                    </h3>
+                    <p class="main-page-services__description">
+                        A chain of moving images in a digital environment opening a window in storytelling
+						via illustration art designs extensively used in Media.
+                    </p>
+                </a>
+			</li>
+		</ul>
 	</section>
+</div>
+<section class="main-page-about">
 	<div class="container">
-		<section class="main-page-article">
-			<h3 class="main-page__title main-page__title_bottom">
-		 		Let’s get in touch
-		 	</h3>
-			<p class="main-page__description">
-		 		We do our best to respond to phone messages<br> 
-				and email within 24 hours.
-			</p>
-			<a href="" class="main-page__button">
-				CONTACT US
-			</a>
-		</section>
-	 </div>
-
-	<section class="footer">
-		<div class="container footer__container">
-			<div class="footer__column">
-				<div class="footer__column-content">
-					<div class="footer__title">
-						We offer
-					</div>
-					<br>
-					<div class="footer__description">
-						<a href="/services.php?cat=interactive" class="footer__link">Ineractive VR</a><br>
-	                    <a href="/services.php?cat=modelling" class="footer__link">3D Modelling</a><br>
-	                    <a href="/services.php?cat=visualization" class="footer__link">Visialisation</a><br>
-	                    <a href="/services.php" class="footer__link">Animation</a><br>
-					</div>
-				</div>
-				<div class="footer__column-content">
-					<div class="footer__title">
-						Get in touch
-					</div>
-					<br>
-					<div class="footer__description">
-						<a href="/contacts.html" class="footer__link">Russia</a><br>
-						<a href="/contacts.html" class="footer__link">Greece</a><br>
-						<a href="/contacts.html" class="footer__link">China</a><br>
-					</div>
-				</div>
+		<div class="main-page-about__container">
+			<div class="main-page-about__image-wrap">
+				<img src="img/main/main-about-us.jpg" class="main-page-about__image">
 			</div>
-			<div class="footer__column footer__column_logo">
-				<div class="footer__column-content footer__column-content_logo">
-					<a href="/index.html">
-						<img src="img/logo.svg" class="logo footer__logo">
-					</a>
-					<div class="footer-social">
-	                    <a href="https://www.facebook.com/polygonator/" target="_blank" title="facebook">
-	                        <img src="img/facebook.svg" alt="facebook" title="facebook" class="footer-social__img">
-	                    </a>
-	                    <a href="https://twitter.com/Polygonator" target="_blank" title="twitter">
-	                        <img src="img/twitter.svg" alt="twitter" title="twitter" class="footer-social__img">
-	                    </a>
-	                    <a href="skype:live:info_651990r?add" title="skype">
-	                        <img src="img/skype.svg" alt="skype" title="skype" class="footer-social__img">
-	                    </a>
-	                    <a href="#" target="">
-	                        <img src="img/linkedin.svg" alt="linkedin" title="linkedin" class="footer-social__img">
-	                    </a>
-	                    <a href="https://www.youtube.com/channel/UCgnoQu-8-FtwLUESbT23ZyA" target="_blank" title="youtube">
-	                        <img src="img/youtube.svg" alt="youtube" title="youtube" class="footer-social__img">
-	                    </a>
-	                </div>
-				</div>
-			</div>
-
-			<div class="footer__column">
-				<div class="footer__column-content">
-					<div class="footer__title">
-						Media
-					</div>
-					<br>
-					<div class="footer__description">
-						<a href="" class="footer__link">Amazing VR</a><br>
-						<a href="" class="footer__link">Off-plan property</a><br>
-						<a href="" class="footer__link">Why Interactive VR</a><br>
-						<a href="" class="footer__link">How does it work</a><br>
-					</div>
-				</div>
-
-				<div class="footer__column-content">
-					<div class="footer__title">
-						Navigation
-					</div>
-					<br>
-					<div class="footer__description">
-						<a href="/about.html" class="footer__link">About</a><br>
-						<a href="/contacts.html" class="footer__link">Contacts</a><br>
-						<a href="/services.php" class="footer__link">Services</a><br>
-						<a href="/_site/blog.html" class="footer__link">Blog</a><br>
-					</div>
-				</div>
+			<div class="main-page-about__content">
+				<h3 class="main-page__title">
+					ABOUT US
+				</h3>
+				<p class="main-page__description">
+					We are now able to deliver more timely outcomes for&nbsp;our&nbsp;clients
+					and&nbsp;without compromising quality because the&nbsp;software
+					and&nbsp;the<br>
+					hardware&nbsp;is&nbsp;able to&nbsp;produce what&nbsp;we&nbsp;want.
+				</p>
+				<p class="main-page__description">
+					So that's been a big, huge step forward.
+				</p>
+				<a href="about.html" class="main-page__button">
+					READ MORE
+				</a>
 			</div>
 		</div>
+	</div>
+</section>
+<div class="container">
+	<section class="main-page-article">
+		<h3 class="main-page__title main-page__title_bottom">
+	 		Let’s get in touch
+	 	</h3>
+		<p class="main-page__description">
+	 		We do our best to respond to phone messages<br> 
+			and email within 24 hours.
+		</p>
+		<a href="" class="main-page__button">
+			CONTACT US
+		</a>
 	</section>
-
-	<section class="copyright">
-		Polygonator.com 2017 © All rights reserved.
-	</section>
-
-
-	<script src="js/main.js"></script>
-</body>
-</html>	
+ </div>

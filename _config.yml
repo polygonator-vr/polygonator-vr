@@ -1,4 +1,8 @@
 # Where things are
+title: Polygonator
+name: Polygonator
+description: Polugonator - Interactive virtual 3d tours a wide range of advanced 3d modeling, visualization & animation services
+exclude: ["node_modules", "gulpfile.js", "package.json", "README.md", "less"]
 source:          .
 destination:     ./_site
 collections_dir: .
@@ -6,6 +10,7 @@ plugins_dir:     _plugins
 layouts_dir:     _layouts
 data_dir:        _data
 includes_dir:    _includes
+
 collections:
   photo_gallery:
     output: true
