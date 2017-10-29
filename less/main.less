@@ -344,8 +344,8 @@ body {
 	
 
 	.header {
-		padding: 2rem 0;
-		height: 10vh;
+		padding: 1rem 0;
+		height: 60px;
 		box-sizing: border-box;
 
         .container {
@@ -407,7 +407,7 @@ body {
     }
 
 	.main-page-hero {
-	    height: 90vh;
+	    height: calc(~"100vh - 60px");
 		max-width: 100%; /* Ограничиваем ширину картинки шириной экрана. */
 		object-fit: cover;
 		box-sizing: border-box;
@@ -484,8 +484,7 @@ body {
 		position: absolute;
 	    top: 32px;
 	    right: 50px;
-	    padding: 0.5rem 1rem;
-	    font-size: 2rem;
+	    padding: 1rem;
 	    background-color: white;
 	    border: none;
 
@@ -538,7 +537,7 @@ body {
     }
 
 	.header-menu-toggle {
-		top: 22px;
+		top: 12px;
 		right: 10px;
 	}
 }

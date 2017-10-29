@@ -121,6 +121,10 @@
     }
 }
 
+.services-selector-mobile {
+    display: none;
+}
+
 
 @supports (display: grid) {
     html {
@@ -192,6 +196,14 @@
 }
 
 @media (max-width: 767px) {
+    .services-menu {
+        display: none;
+    }
+
+    .services-selector-mobile {
+        display: block;
+    }
+
     .services {
         text-align: center;
 
@@ -241,18 +253,21 @@
 
     .services {
         width: auto;
-        margin: 3.5rem 0 0;
+        margin: 3.5rem -1rem 0;
+
     }
 
     .grid {
         display: block;
 
         &__item {
+            display: block;
             border: 0;
-            width: 100%;
+            width: 50%;
             height: auto;
-            float: none;
-            margin: 2rem 0;
+            float: left;
+            margin: 0;
+            padding: 1rem;
         }
     }
 

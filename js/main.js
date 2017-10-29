@@ -7,8 +7,8 @@ function toggleMenu() {
         header.style.height = 'auto';
     } else {
         headerMenu.style.display = 'none';
-        header.style.height = '10vh';
-        mainPageHero.style.height = '90vh';
+        header.style.height = '60px';
+        mainPageHero.style.height = 'calc(100vh - 60px)';
     }
 }
 

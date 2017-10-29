@@ -12,7 +12,7 @@ gulp.task('less', function () {
         .pipe(less())
         .pipe(concat('style.css'))
         .pipe(minifyCss())
-        .pipe(gulp.dest('./css/'));
+        .pipe(gulp.dest('./_includes/css/'));
 });
 
 gulp.task('watcher',function(){
