@@ -27,4 +27,8 @@ $(document).ready(function() {
         });
     });
 
+    $("#selector-mobile").on("change", function() {
+        window.location = $(this).val();
+    });
+
 });

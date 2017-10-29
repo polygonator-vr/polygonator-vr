@@ -1,5 +1,3 @@
-
-
 <div class="services-menu">
     <ul class="services-menu__list">
         {% for menu in include.participants %}
@@ -9,3 +7,11 @@
         {% endfor %}
     </ul>
 </div>
+
+<select class="services-selector-mobile" id="selector-mobile">
+    {% for menu in include.participants %}
+        <option value="{{ menu.link }}" {% if page.menu == menu.menu_id%} selected {% endif %}">
+            {{ menu.name }}
+        </option>
+    {% endfor %}
+</select>

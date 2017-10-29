@@ -2,11 +2,16 @@
 layout: default
 title: {{ page.title }}
 ---
-<div class="container">
-  <h2 class="spacing">{{ page.title }}</h2>
+<section class="content content-contact">
+	<div class="container">
+		<h1 class="title">{{ page.title }}</h1>
   
-  <div class="blog-post spacing">
-    <p class="summary">{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></p>
-    {{ content }}
-  </div>
-</div>
+		 <div class="blog-post spacing">
+           
+            <p class="blog-post__summary">{{ page.category }}<span class="blog-post__date">{{ page.date | date: '%B %d, %Y' }}</span></p>
+            <p class="blog-post__paragraph">
+                {{ content }}
+            </p>
+        </div>
+	</div>
+</section>
