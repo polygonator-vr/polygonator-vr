@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-    <link href="libs/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+
+    <link href="libs/jquery.fancybox.min.css" rel="stylesheet">
     <link href="libs/font-awesome.min.css" rel="stylesheet">
     <style>{% include style.css %}</style>
 </head>
@@ -30,7 +35,7 @@
                     <a href="/contacts.html" class="header-menu__link {% if page.title == 'Contacts' %} header-menu__link_active {% endif %}">CONTACTS</a>
                 </li>
                 <li class="header-menu__item">
-                    <a href="/services.html" 
+                    <a href="/services" 
                         class="header-menu__link {% if page.title == 'Services' %} header-menu__link_active {% endif %}">
                     SERVICES</a>
                 </li>

@@ -1,0 +1,54 @@
+---
+layout: default
+title: Services
+menu: Modelling
+photo_gallery:
+    - image_path: /img/services/modelling/001.jpg
+      small_path: /img/services/modelling/small/001.jpg
+    - image_path: /img/services/modelling/002.jpg
+      small_path: /img/services/modelling/small/002.jpg
+    - image_path: /img/services/modelling/003.jpg
+      small_path: /img/services/modelling/small/003.jpg
+    - image_path: /img/services/modelling/004.jpg
+      small_path: /img/services/modelling/small/004.jpg
+    - image_path: /img/services/modelling/005.jpg
+      small_path: /img/services/modelling/small/005.jpg
+    - image_path: /img/services/modelling/006.jpg
+      small_path: /img/services/modelling/small/006.jpg
+    - image_path: /img/services/modelling/007.jpg
+      small_path: /img/services/modelling/small/007.jpg
+    - image_path: /img/services/modelling/008.jpg
+      small_path: /img/services/modelling/008.jpg
+    - image_path: /img/services/modelling/009.jpg
+      small_path: /img/services/modelling/small/009.jpg
+    - image_path: /img/services/modelling/010.jpg
+      small_path: /img/services/modelling/small/010.jpg
+    - image_path: /img/services/modelling/011.jpg
+      small_path: /img/services/modelling/small/011.jpg
+    - image_path: /img/services/modelling/012.jpg
+      small_path: /img/services/modelling/small/012.jpg
+    - image_path: /img/services/modelling/013.jpg
+      small_path: /img/services/modelling/small/013.jpg
+    - image_path: /img/services/modelling/014.jpg
+      small_path: /img/services/modelling/small/014.jpg
+---
+<section class="container">
+    <section class="services-top">
+        <div class="services-top-title">
+            <h1 class="title">SERVICES</h1>
+        </div>
+        {% include services-menu.html %}
+    </section>
+
+    <section class="services">
+    <div class="grid">
+        {% for image in page.photo_gallery %}
+            <div class="grid__item">
+                <a data-fancybox="gallery" href="{{ image.image_path }}" class="services__link" rel="services-all">
+                    <img src="{{ image.small_path }}" alt="{{ image.title }}" class="services__image">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+  </section>
+</section>

@@ -11,3 +11,20 @@ function toggleMenu() {
         mainPageHero.style.height = '90vh';
     }
 }
+
+$(document).ready(function() {
+   // $("a.js-open-gallery").fancybox();
+
+    $("#contact").submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: 'sendMail.php',
+            data: $(this).serialize(),
+            success: function() {
+                alert('Thank you for your message!');
+            }
+        });
+    });
+
+});
