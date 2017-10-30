@@ -2,7 +2,7 @@
 layout: post
 title: Driving the New Rolls-Royce Phantom Is an Exercise in Serious Luxury
 category: Information
-image: /uploads/selfie-20170612-175449.jpg
+image: /uploads/rolls-royce-phantom.jpg
 ---
 
 
@@ -26,7 +26,7 @@ Climb in the back. With a gentle pull, the rear-hinged door closes toward the fr
 
 Rolls-Royce says the new Phantom is the quietest car on Earth. After three days spent winding through mountain passes and visiting rural retreats near Zurich, I believe it. Engineers tested 180 prototypes of the tires alone—they’re filled with noise-canceling foam—and inserted thick layers of felt between alloy skins inside the cabin floor and along the bulkhead. The result is a suite that’s officially 10 percent quieter than its predecessor when moving at high speeds.
 
-The new Rolls-Royce Phantom easily dominated Switzerland’s Furka Pass. The sedan is the first complete update on the model since 2003.&nbsp;
+The new Rolls-Royce Phantom easily dominated Switzerland’s Furka Pass. The sedan is the first complete update on the model since 2003.
 
 Photographer: Yann Gross for Bloomberg Businessweek
 
@@ -34,10 +34,10 @@ Today’s wealthy, many of whom are relatively young and newly affluent, expect 
 
 A foot on the pedal reveals that BMW’s full engineering resources have made the car lighter, stiffer, and more technologically advanced than anything that’s come before.
 
-Rolls-Royce is very proud of a new double-wishbone suspension coupled with an air ride system that makes the car as smooth as a magic carpet, as executives will say to you often. Excuse the clich&eacute; this time—they’re right. Push the gas pedal, and the Phantom uses its massive power to surge effortlessly forward with authority and elegance.
+Rolls-Royce is very proud of a new double-wishbone suspension coupled with an air ride system that makes the car as smooth as a magic carpet, as executives will say to you often. Excuse the cliché this time—they’re right. Push the gas pedal, and the Phantom uses its massive power to surge effortlessly forward with authority and elegance.
 
 Most impressive is the car’s novel four-wheel drive. It allows each wheel autonomy to choose traction and vector over any change in direction. This was the secret to breaking the Furka: Even as the Phantom thrust forward like a bullet train, it danced across the pass like a much smaller car, surprising at every turn.
 
 This bodes well for the Project Cullinan, the much anticipated first-ever SUV from Rolls-Royce, which arrives late next year. It had better be good. That is, if you need another Rolls.
 
-&nbsp;Bloomberg Businessweek
+ Bloomberg Businessweek
