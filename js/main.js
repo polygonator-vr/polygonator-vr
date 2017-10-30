@@ -13,22 +13,14 @@ function toggleMenu() {
 }
 
 $(document).ready(function() {
-   // $("a.js-open-gallery").fancybox();
-
-    $("#contact").submit(function(e) {
-        e.preventDefault();
-        $.ajax({
-            type: 'POST',
-            url: 'sendMail.php',
-            data: $(this).serialize(),
-            success: function() {
-                alert('Thank you for your message!');
-            }
-        });
+      $("#selector-mobile").on("change", function() {
+        window.location = $(this).val();
     });
 
-    $("#selector-mobile").on("change", function() {
-        window.location = $(this).val();
+    
+    $('#contact').on('submit', function(e) {
+        $('#contact *').fadeOut(2000);
+        $('#submitted_message').prepend('Your submission has been processed...');
     });
 
 });

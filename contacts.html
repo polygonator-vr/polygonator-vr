@@ -9,26 +9,32 @@ title: Contacts
 		<div>
 			<div class="contact__form-wrap">
 				<h2 class="contact__subtitle">We love getting messages</h2>
-				<form class="contact-form" method="post" action="sendmail.php" id="contact">
+				<script type="text/javascript">var submitted=false;</script>
+				viewform?usp=pp_url&entry.1059809336=test&entry.1962079649=test&entry.1285376053=test@tes.ru&entry.1794005376=testt
+				<form class="contact-form" name="gform" id="contact" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScKwvdjPnwSlnUh80YqaqlAMSW6_7yXTpBddIRVTZud1Lb5JA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 					<div class="contact-form__item">
-						<input type="text" name="name" placeholder="name*">
+						<input type="text" name="entry.1059809336" id="entry.1059809336" placeholder="name*" required>
 					</div>
 					<div class="contact-form__item">
-						<input type="text" name="phone" placeholder="phone number">
+						<input type="text" name="entry.1962079649" id="entry.1962079649" placeholder="phone number">
 					</div>						
 					<div class="contact-form__item">
-						<input type="text" name="email" placeholder="email*">
+						<input type="text" name="entry.1285376053" id="entry.1285376053" placeholder="email*">
 					</div>
 					<div class="contact-form__item contact-form__item_textarea">
-						<textarea name="text" placeholder="your message"></textarea>
+						<textarea name="entry.1794005376" id="entry.1794005376" placeholder="your message"></textarea>
 					</div>
 					<div class="contact-form__button">
 						<button type="submit">Send</button>
 					</div>
+
+					<div class="contact-form-label">
+						Fields with * - required
+					</div>
 				</form>
-				<div class="contact-form-label">
-					Fields with * - required
-				</div>
+				<div class="contact-form-label" id="submitted_message"></div>
+
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 			</div>
 			<div class="contact__cities-wrap">
 				<div class="contact-city">
