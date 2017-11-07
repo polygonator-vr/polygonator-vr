@@ -4,5 +4,36 @@ title: Services
 menu: All
 ---
 <section class="container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aDF3giQVVM8" frameborder="0" allowfullscreen></iframe>
+  <section class="services-top">
+        <div class="services-top-title">
+            <h1 class="title">SERVICES</h1>
+        </div>
+        {% include services-menu.html participants=site.data.services_categories %}
+    </section>
+  
+  <div style="display: inline-block">
+    <div style="float: left">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aDF3giQVVM8" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div style="float: left">
+      <div>
+        <a href="/contacts.html" class="main-page__button">
+			    Windows
+		    </a>
+      </div>  
+      <div>
+        <a href="/contacts.html" class="main-page__button">
+			    OS X
+		    </a>
+      </div>
+      <div>
+        <a href="/contacts.html" class="main-page__button">
+			    Linux
+		    </a>
+      </div>
+    </div>  
+  </div>
+  
+  
 </section>
