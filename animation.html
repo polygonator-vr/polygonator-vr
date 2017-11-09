@@ -11,29 +11,47 @@ menu: All
         {% include services-menu.html participants=site.data.services_categories %}
     </section>
   
-  <div style="display: inline-block; margin-top: 20px">
-    <div style="float: left">
+  <h1 class="animation__main-title">
+    Appartments
+  </h1>
+
+  <div class="animation">
+    <div class="animation__video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/aDF3giQVVM8" frameborder="0" allowfullscreen></iframe>
     </div>
     
-    <div style="float: left; margin-left: 50px;">
-      <div>
-        <a href="/contacts.html" class="main-page__button">
-			    Windows
-		    </a>
-      </div>  
-      <div>
-        <a href="/contacts.html" class="main-page__button">
-			    OS X
-		    </a>
+    <div class="animation__buttons">
+      <div class="animation__buttons-group">
+        <div>
+          <a href="/contacts.html" class="main-page__button main-page__button_animation-first">WIN x64</a>
+        </div>  
+        <div>
+          <a href="/contacts.html" class="main-page__button">OS X</a>
+        </div>
+        <div>
+          <a href="/contacts.html" class="main-page__button">User Manual</a>
+        </div>
       </div>
-      <div>
-        <a href="/contacts.html" class="main-page__button">
-			    Linux
-		    </a>
+      <div class="animation__share">
+        <span class="animation__share-text">Share</span>
+        {% include share-links.html %}
       </div>
     </div>  
   </div>
-  
+
+  <div class="animation-recomend">
+    
+        
+        <h2 class="animation-recomend__title">Requirements:</h2>
+        <p class="animation-recomend__text">Intel core i5 3570/AMD FX-8350 CPU, 8 GB RAM, nVidia 760, 2Gb HDD space<br>
+           Windows 7 and higher x64 ONLY</p>
+        <h2 class="animation-recomend__title">Recommended:</h2>
+        <p class="animation-recomend__text">Intel core i7 6800 CPU, 16 GB RAM, nVidia 1060, 2Gb HDD space</p>
+
+        <h2 class="animation-recomend__title">Oculus Rift and VR mode</h2>
+        <h2 class="animation-recomend__title">Requirements:</h2>
+        <p class="animation-recomend__text">Intel core i7 6800 CPU, 16 GB RAM, nVidia 1060, 3 USB 3.0, HDMI, 2Gb HDD space</p>
+    </p>
+  </div> 
   
 </section>
