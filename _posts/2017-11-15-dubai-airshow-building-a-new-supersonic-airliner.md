@@ -48,7 +48,7 @@ Also on Monday, Mr Scholl announced two new high profile appointments - Bill Jam
 
 The former will be in charge of production and finance, while the latter will help negotiate the regulatory minefield. They join a team that already includes people from Boeing, NASA, Lockheed Martin and rocket business SpaceX.
 
-Mr Scholl says the economics of his business plan are comparable with subsonic business class costs - airlines should be able to make a profit charging around $5,000 (&pound;3,800) a ticket.
+Mr Scholl says the economics of his business plan are comparable with subsonic business class costs - airlines should be able to make a profit charging around $5,000 (£3,800) a ticket.
 
 The aircraft will have 55 seats (Concorde had 100) and travel about 4,500 miles. That would still mean a refuelling stop on very long-haul flights. But even then, the time saved could make it worthwhile for travellers, he argues. "There are about 500 routes globally that are economically viable for supersonic."
 
