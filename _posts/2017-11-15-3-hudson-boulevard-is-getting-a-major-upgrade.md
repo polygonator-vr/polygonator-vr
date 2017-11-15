@@ -8,13 +8,7 @@ image: /uploads/3-hudson-boulevard-is-getting-a-major-upgrade.jpg
 
 ![](/uploads/versions/3-hudson-boulevard-is-getting-a-major-upgrade---x----664-441x---.jpg)
 
-By Lois Weiss October 31, 2017 |&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
+| By Lois Weiss October 31, 2017       | |
 
 Developer Joe Moinian is rebooting 3 Hudson Blvd. and has brought in JLL to oversee the development of the new office tower.
 
@@ -60,7 +54,7 @@ The top two floors are set aside for a conference center, or perhaps executive o
 
 Automated parking is expected to be available.
 
-With 12,600 square feet of retail, Moinian is now courting a white table restaurant as well as a caf&eacute; with outdoor seating along Hudson Boulevard Park.
+With 12,600 square feet of retail, Moinian is now courting a white table restaurant as well as a café with outdoor seating along Hudson Boulevard Park.
 
 A bench in that fountain-filled oasis has been named for Oskar Brecher, the Moinian Group’s executive who spearheaded the development of the building and passed away suddenly last year.
 
