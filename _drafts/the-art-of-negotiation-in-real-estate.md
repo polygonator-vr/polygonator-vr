@@ -6,7 +6,7 @@ image: /uploads/the-art-of-negotiation-in-real-estate.jpg
 ---
 
 
-![](/uploads/versions/the-art-of-negotiation-in-real-estate---x----744-400x---.jpg)
+![](/uploads/versions/the-art-of-negotiation-in-real-estate-1---x----744-400x---.jpg)![](/uploads/versions/the-art-of-negotiation-in-real-estate---x----744-400x---.jpg)
 
 Many real estate agents and clients think of negotiation as simply how they price their listing or their offer to buy. Maybe they include the concept of a counter offer in their bag of negotiation tools. The truth is that proper negotiation is much more than simplythe price on a home or earnest deposit used in the offer. I’ve written a paragraph on a few of the most common opportunities and mistakes that I see in real estate transactions in Dubai. My goal is to get you thinking about how many different ways there are to improve the outcome of your transaction. Once you put this foremost in your mind, you will begin to identify other opportunities unique to your particular transaction.
 
