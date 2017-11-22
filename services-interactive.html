@@ -1,0 +1,34 @@
+---
+layout: default
+title: Interactive Tour
+menu: Interactive
+photo_gallery:
+    - image_path: /img/services/interactive/Apartment_001.png
+      link: /interactive.html
+    - image_path: /img/services/interactive/Apartment_002.png
+      link: /interactive.html
+    - image_path: /img/services/interactive/Apartment_003.png
+      link: /interactive.html
+    - image_path: /img/services/interactive/Apartment_004.png
+      link: /interactive.html
+---
+<section class="container">
+    <section class="services-top">
+        <div class="services-top-title">
+            <h1 class="title">SERVICES</h1>
+        </div>
+        {% include services-menu.html participants=site.data.services_categories %}
+    </section>
+
+    <section class="services">
+    <div class="grid">
+        {% for image in page.photo_gallery %}
+            <div class="grid__item">
+                <a href="{{ image.link }}" class="services__link" >
+                    <img src="{{ image.image_path }}" alt="" class="services__image">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+  </section>
+</section>
