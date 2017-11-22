@@ -6,9 +6,9 @@ image: /uploads/bitcoin-is-creeping-into-real-estate-deals.jpg
 ---
 
 
-![](/uploads/versions/bitcoin-is-creeping-into-real-estate-deals---x----1242-810x---.jpg)Some real-estate companies also are beginning to experiment with using cryptocurrencies for things like rental payments or even to buy property. PHOTO: CHRIS RATCLIFFE/BLOOMBERG NEWSBy&nbsp;
+![](/uploads/versions/bitcoin-is-creeping-into-real-estate-deals---x----1242-810x---.jpg)Some real-estate companies also are beginning to experiment with using cryptocurrencies for things like rental payments or even to buy property. PHOTO: CHRIS RATCLIFFE/BLOOMBERG NEWSBy
 
-By Peter Grant Nov. 21, 2017 7:00 a.m.&nbsp;
+By Peter Grant Nov. 21, 2017 7:00 a.m.
 
 The real-estate industry is taking its first steps in adopting cryptocurrencies and the technology that backs them in what could eventually produce important changes in the way property is bought and sold.
 
