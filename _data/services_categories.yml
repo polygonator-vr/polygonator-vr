@@ -1,7 +1,7 @@
 - link: /services.html
   name: All
   menu_id: All
-- link: /services-interactive.html
+- link: /interactive.html
   name: Interactive Tour
   menu_id: Interactive
 - link: /services-modelling.html
