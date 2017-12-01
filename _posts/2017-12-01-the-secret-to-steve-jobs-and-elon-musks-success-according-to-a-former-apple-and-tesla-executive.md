@@ -10,8 +10,6 @@ image: /uploads/elon-musk-147-1.jpg
 
 ![](/uploads/versions/elon-musk-147---x----2400-1792x---.jpg)Business Insider uses cookies to make this website better. You can change your cookie settings at any time.
 
-&nbsp;
-
 The secret to Steve Jobs' and Elon Musk's success, according to a former Apple and Tesla executive
 
 Matt Turner and Graham Rapier
@@ -76,7 +74,7 @@ Blankenship: It doesn't need to be Tesla. Just so you know, that was never Elon'
 
 When you start talking about other technology, there are a lot of people racing out there for autonomous cars, and I think they have a different motivation. They're doing it because others are saying they need to do it. They're saying, "I can't be behind the curve; we've got to do this because we have to." With Elon, it's a different reason: It's about safety. When you have a different mind-set like that: It is safer to be in an autonomous car. In fact, if you want to see an interesting video, there's one on YouTube of a driver in the Netherlands in a Tesla Model X and he's on the highway and the car is auto driving. Up ahead there's a car that goes to pull out around another car, and the Tesla actually warns that there's an accident about to happen one second before the accident even connects. That's safety. Yes, it's cool; it's a neat technology with lots of applications; but it's safer. When you have that type of motivation you do things in a different way. That's the way Elon thinks about things. It's safer, and that's what he would focus on.
 
-&nbsp;Turner: What you've described at both Apple and Tesla with Steve Jobs and Elon Musk is a mission at the heart of the company and its strategy. Are there any other companies or people you see out there that when you look at them you say, that's the same thing?
+ Turner: What you've described at both Apple and Tesla with Steve Jobs and Elon Musk is a mission at the heart of the company and its strategy. Are there any other companies or people you see out there that when you look at them you say, that's the same thing?
 
 Blankenship: I think there are different types of missions. Yes, Elon and Steve had their missions. If you look at Amazon, Amazon's mission, without a doubt, is the customer: What can we do for the customer? What can we do to make the experience better for the customer? How do we have the best customer experience on the planet? That's a mission.
 
