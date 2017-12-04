@@ -70,7 +70,7 @@ Do you get sad when people ignore you?
 
 Do you freeze when you’re put on the spot?
 
-2. Interpret Your Emotions
+1. Interpret Your Emotions
 
 Once you have a better picture of how you respond to different situations in life, it’s time to understand them. Think about these things:
 
@@ -82,7 +82,7 @@ Why do you even get upset, sad, happy, angry, etc., in the first place?
 
 Don’t judge and say, “I’m such a fool.” No, it’s all about understanding your emotions. Nothing more. Nothing less.
 
-3. Manage Your Emotions
+1. Manage Your Emotions
 
 This is a big part of succeeding in business. A leader doesn’t go with the flow or follows the energy of a group. A leader SETS the mood. But before you can set the mood in groups, you must master setting your internal mood. Answer yourself:
 
@@ -96,7 +96,7 @@ I’ve applied the above 3-step method to improve my ability to identify my own 
 
 What you will find is this: When you can identify your own emotions, you will also get better at identifying other people’s emotions. And that’s exactly what EI means.
 
-This is a huge clich&eacute;. We are all truly the same, especially if you look beyond the emotional wall most of us put up.
+This is a huge cliché. We are all truly the same, especially if you look beyond the emotional wall most of us put up.
 
 We all experience sadness, happiness, anger, guilt, fear, disappointment. But you have to recognize that.
 
@@ -106,6 +106,6 @@ More importantly: We won’t develop self-awareness. And therefore, we can’t g
 
 A real leader knows the emotions of another person better than the person himself. But it all starts with knowing yourself first.
 
-Darius Foroux is an author, entrepreneur, and podcaster. He writes at DariusForoux.com, where he shares ideas for living a productive life.&nbsp;
+Darius Foroux is an author, entrepreneur, and podcaster. He writes at DariusForoux.com, where he shares ideas for living a productive life.
 
-Originally published at dariusforoux.com.&nbsp;
+Originally published at dariusforoux.com.
