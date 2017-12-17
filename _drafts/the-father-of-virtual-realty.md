@@ -1,12 +1,14 @@
 ---
 layout: post
-title: The father of Virtual Realty
+title: >-
+  The father of virtual reality sounds off on the changing culture of Silicon
+  Valley, the impending #MeToo backlash, and why he left Google for Microsoft
 category: Information
 image: /uploads/gettyimages-457106850.jpg
 ---
 
 
-![](/uploads/versions/gettyimages-457106850---x----2400-1600x---.jpg)Jaron Lanier's latest book, "Dawn of the New Everything,".
+![](/uploads/versions/gettyimages-457106850---x----2400-1600x---.jpg)Jaron Lanier's latest book, "Dawn of the New Everything,". Getty Images
 
 Widely recognized as a founding father of virtual reality, Jaron Lanier has been hugely influential in shaping the technology of today. Lanier's work is considered foundational to the field of VR; he's spurred developments in immersive avatars, VR headsets and accessories, and was involved in early advancements in medical imaging and surgical simulator techniques. He's also credited with popularizing the phrase "virtual reality."
 
