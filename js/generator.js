@@ -6,7 +6,7 @@
 		{
 			name: 'Facebook',
 			class: 'facebook',
-			url: 'https://www.facebook.com/sharer.php?s=100&p[url]={url}&p[images][0]={img}&p[title]={title}&p[summary]={desc}'
+			url: 'http://www.facebook.com/sharer.php?s=100&p[url]={url}&p[images][0]={img}&p[title]={title}&p[summary]={desc}'
 		},
 		{
 			name: 'Facebook (share dialog)',
