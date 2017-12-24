@@ -8,7 +8,20 @@
     <a href="https://www.linkedin.com/company/11055252/" target="_blank">
         <img src="/img/linkedin.svg" alt="linkedin" title="linkedin" class="footer-social__img">
     </a>
-    <div target="_blank">
-        <button>TEST</button>
+    
+     <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {    
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="fb-share-button" target="_blank"
+        data-href="https://www.your-domain.com/your-page.html" 
+        data-layout="button_count">
+        TEST   
     </div>
 </div>
