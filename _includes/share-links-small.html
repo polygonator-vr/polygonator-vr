@@ -1,8 +1,19 @@
 <div class="footer-social">
     
-    <script>
-        alert("ready?");
-    </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your share button code -->
+  <div class="fb-share-button" 
+    data-href="https://www.your-domain.com/your-page.html" 
+    data-layout="button_count">
+  </div>
     
     <a onclick="window.open(this.href, this.target, width=70, height=50); return false;" class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/?u=https%3A%2F%2Fwww.facebook.com%2Fpolygonator%2F" title="facebook">
         <img style="display: inline" src="/img/facebook.svg" alt="facebook" title="facebook" class="footer-social__img">
