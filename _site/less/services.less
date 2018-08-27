@@ -117,6 +117,7 @@
         color: #000;
         text-decoration: none;
         padding: 0 1.5rem;
+        transition: 0.2s ease;
 
         &_active {
             font-weight: 600;
@@ -124,6 +125,10 @@
 
         &_last {
             padding-right: 0;
+        }
+        
+        &:hover {
+            opacity: 0.6;
         }
     }
 }
@@ -160,6 +165,7 @@
     .main-page__button {
         margin: 1.4rem auto 0;
         max-width: 100%;
+        transition: 0.2s ease;
 
         &_animation-first {
             margin-top: 0;
