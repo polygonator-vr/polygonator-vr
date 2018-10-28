@@ -11,4 +11,4 @@ LVMH has launched its latest venture, La Maison des Startups. The accelerator in
 
 The program was fine-tuned through the conglomerate’s other initiative, the LVMH Innovation Award, where it initially came across the brands it decided to support. The start-ups will focus on fashion, but will include companies specialising in AI, augmented and virtual reality, e-commerce, anti-counterfeiting and sustainability.
 
-In related news, it was recently reported that LVMH’s founder, Bernard Arnault, is now the richest person in fashion.
+In related news, it was recently reported that LVMH’s founder, Bernard Arnault, is now the richest person in fashion!
