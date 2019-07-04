@@ -2,7 +2,7 @@
 layout: post
 title: 'Saint Barthelemy island : Paradise in the Caribbean'
 category: Information
-image: /uploads/highresscreenshot00008.jpg
+image: /uploads/1-1.jpg
 ---
 
 The glamorous Saint-Barts exudes a seductive blend of European sophistication, natural beauty and the laid-back charm of the island. Saint- Barts – that 25 square kilometers of pristine white beaches and tropical gardens. What could be more captivating for a business person living in the rhythm of a huge metropolis than a beautiful island in the ocean, where there is peace and quiet?&nbsp;
