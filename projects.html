@@ -1,0 +1,113 @@
+---
+layout: default
+title: Projects
+menu: Projects
+category: Services
+photo_gallery:
+    - image_path: /img/projects/orig/vesper/61.jpg
+      small_path: /img/projects/small/vesper/61.jpg
+    - image_path: /img/projects/orig/vesper/62.jpg
+      small_path: /img/projects/small/vesper/62.jpg
+    - image_path: /img/projects/orig/vesper/63.jpg
+      small_path: /img/projects/small/vesper/63.jpg
+    - image_path: /img/projects/orig/vesper/64.jpg
+      small_path: /img/projects/small/vesper/64.jpg
+    - image_path: /img/projects/orig/vesper/65.jpg
+      small_path: /img/projects/small/vesper/65.jpg
+    - image_path: /img/projects/orig/vesper/66.jpg
+      small_path: /img/projects/small/vesper/66.jpg
+    - image_path: /img/projects/orig/vesper/67.jpg
+      small_path: /img/projects/small/vesper/67.jpg
+    - image_path: /img/projects/orig/vesper/68.jpg
+      small_path: /img/projects/small/vesper/68.jpg
+    - image_path: /img/projects/orig/vesper/69.jpg
+      small_path: /img/projects/small/vesper/69.jpg
+    - image_path: /img/projects/orig/ue421/51.jpg
+      small_path: /img/projects/small/ue421/51.jpg
+    - image_path: /img/projects/orig/ue421/52.jpg
+      small_path: /img/projects/small/ue421/52.jpg
+    - image_path: /img/projects/orig/ue421/53.jpg
+      small_path: /img/projects/small/ue421/53.jpg
+    - image_path: /img/projects/orig/ue421/54.jpg
+      small_path: /img/projects/small/ue421/54.jpg
+    - image_path: /img/projects/orig/ue421/55.jpg
+      small_path: /img/projects/small/ue421/55.jpg
+    - image_path: /img/projects/orig/ue421/56.jpg
+      small_path: /img/projects/small/ue421/56.jpg
+    - image_path: /img/projects/orig/ue421/57.jpg
+      small_path: /img/projects/small/ue421/57.jpg
+    - image_path: /img/projects/orig/ue421/58.jpg
+      small_path: /img/projects/small/ue421/58.jpg
+    - image_path: /img/projects/orig/ue421/59.jpg
+      small_path: /img/projects/small/ue421/59.jpg
+    - image_path: /img/projects/orig/red/41.jpg
+      small_path: /img/projects/small/red/41.jpg
+    - image_path: /img/projects/orig/red/42.jpg
+      small_path: /img/projects/small/red/42.jpg
+    - image_path: /img/projects/orig/red/43.jpg
+      small_path: /img/projects/small/red/43.jpg
+    - image_path: /img/projects/orig/red/44.jpg
+      small_path: /img/projects/small/red/44.jpg
+    - image_path: /img/projects/orig/red/45.jpg
+      small_path: /img/projects/small/red/45.jpg
+    - image_path: /img/projects/orig/nornikel/31.jpg
+      small_path: /img/projects/small/nornikel/31.jpg
+    - image_path: /img/projects/orig/nornikel/32.jpg
+      small_path: /img/projects/small/nornikel/32.jpg
+    - image_path: /img/projects/orig/nornikel/33.jpg
+      small_path: /img/projects/small/nornikel/33.jpg
+    - image_path: /img/projects/orig/nornikel/34.jpg
+      small_path: /img/projects/small/nornikel/34.jpg
+    - image_path: /img/projects/orig/nornikel/35.jpg
+      small_path: /img/projects/small/nornikel/35.jpg
+    - image_path: /img/projects/orig/nornikel/36.jpg
+      small_path: /img/projects/small/nornikel/36.jpg
+    - image_path: /img/projects/orig/nornikel/37.jpg
+      small_path: /img/projects/small/nornikel/37.jpg
+    - image_path: /img/projects/orig/nornikel/38.jpg
+      small_path: /img/projects/small/nornikel/38.jpg
+    - image_path: /img/projects/orig/hotel/21.jpg
+      small_path: /img/projects/small/hotel/21.jpg
+    - image_path: /img/projects/orig/hotel/22.jpg
+      small_path: /img/projects/small/hotel/22.jpg
+    - image_path: /img/projects/orig/hotel/23.jpg
+      small_path: /img/projects/small/hotel/23.jpg
+    - image_path: /img/projects/orig/hotel/24.jpg
+      small_path: /img/projects/small/hotel/24.jpg
+    - image_path: /img/projects/orig/bungalo/11.jpg
+      small_path: /img/projects/small/bungalo/11.jpg
+    - image_path: /img/projects/orig/bungalo/12.jpg
+      small_path: /img/projects/small/bungalo/12.jpg
+    - image_path: /img/projects/orig/71.jpg
+      small_path: /img/projects/small/71.jpg
+    - image_path: /img/projects/orig/72.jpg
+      small_path: /img/projects/small/72.jpg
+    - image_path: /img/projects/orig/72.jpg
+      small_path: /img/projects/small/72.jpg
+    - image_path: /img/services/visualization/010.jpg
+      small_path: /img/services/visualization/small/010.jpg
+    - image_path: /img/services/visualization/011.jpg
+      small_path: /img/services/visualization/small/011.jpg
+    - image_path: /img/services/visualization/012.jpg
+      small_path: /img/services/visualization/small/012.jpg
+---
+<section class="container">
+    <section class="services-top">
+        <div class="services-top-title">
+            <h1 class="title">SERVICES</h1>
+        </div>
+        {% include services-menu.html participants=site.data.services_categories %}
+    </section>
+
+    <section class="services">
+		<div class="grid">
+		    {% for image in page.photo_gallery %}
+		        <div class="grid__item">
+		            <a data-fancybox="gallery" href="{{ image.image_path }}" class="services__link" rel="services-all">
+		                <img src="{{ image.small_path }}" alt="{{ image.title }}" class="services__image">
+		            </a>
+		        </div>
+		    {% endfor %}
+		</div>
+	</section>
+</section>

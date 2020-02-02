@@ -1,65 +1,11 @@
 ---
 layout: default
-title: Services
-menu: All
+title: Interactive Tour
+menu: Interactive
 category: Services
-photo_gallery:
-    - image_path: /img/services/visualization/001.jpg
-      small_path: /img/services/visualization/small/001.jpg
-    - image_path: /img/services/visualization/002.jpg
-      small_path: /img/services/visualization/small/002.jpg
-    - image_path: /img/services/visualization/003.jpg
-      small_path: /img/services/visualization/small/003.jpg
-    - image_path: /img/services/visualization/004.jpg
-      small_path: /img/services/visualization/small/004.jpg
-    - image_path: /img/services/visualization/005.jpg
-      small_path: /img/services/visualization/small/005.jpg
-    - image_path: /img/services/visualization/006.jpg
-      small_path: /img/services/visualization/small/006.jpg
-    - image_path: /img/services/visualization/007.jpg
-      small_path: /img/services/visualization/small/007.jpg
-    - image_path: /img/services/visualization/008.jpg
-      small_path: /img/services/visualization/small/008.jpg
-    - image_path: /img/services/visualization/009.jpg
-      small_path: /img/services/visualization/small/009.jpg
-    - image_path: /img/services/visualization/010.jpg
-      small_path: /img/services/visualization/small/010.jpg
-    - image_path: /img/services/visualization/011.jpg
-      small_path: /img/services/visualization/small/011.jpg
-    - image_path: /img/services/visualization/012.jpg
-      small_path: /img/services/visualization/small/012.jpg
-    - image_path: /img/services/visualization/013.jpg
-      small_path: /img/services/visualization/small/013.jpg
-    - image_path: /img/services/visualization/014.jpg
-      small_path: /img/services/visualization/small/014.jpg
-    - image_path: /img/services/modelling/001.jpg
-      small_path: /img/services/modelling/small/001.jpg
-    - image_path: /img/services/modelling/002.jpg
-      small_path: /img/services/modelling/small/002.jpg
-    - image_path: /img/services/modelling/003.jpg
-      small_path: /img/services/modelling/small/003.jpg
-    - image_path: /img/services/modelling/004.jpg
-      small_path: /img/services/modelling/small/004.jpg
-    - image_path: /img/services/modelling/005.jpg
-      small_path: /img/services/modelling/small/005.jpg
-    - image_path: /img/services/modelling/006.jpg
-      small_path: /img/services/modelling/small/006.jpg
-    - image_path: /img/services/modelling/007.jpg
-      small_path: /img/services/modelling/small/007.jpg
-    - image_path: /img/services/modelling/008.jpg
-      small_path: /img/services/modelling/008.jpg
-    - image_path: /img/services/modelling/009.jpg
-      small_path: /img/services/modelling/small/009.jpg
-    - image_path: /img/services/modelling/010.jpg
-      small_path: /img/services/modelling/small/010.jpg
-    - image_path: /img/services/modelling/011.jpg
-      small_path: /img/services/modelling/small/011.jpg
-    - image_path: /img/services/modelling/012.jpg
-      small_path: /img/services/modelling/small/012.jpg
-    - image_path: /img/services/modelling/013.jpg
-      small_path: /img/services/modelling/small/013.jpg
 ---
 <section class="container">
+
     <section class="services-top">
         <div class="services-top-title">
             <h1 class="title">SERVICES</h1>
@@ -67,15 +13,342 @@ photo_gallery:
         {% include services-menu.html participants=site.data.services_categories %}
     </section>
 
-    <section class="services">
-		<div class="grid">
-		    {% for image in page.photo_gallery %}
-		        <div class="grid__item">
-		            <a data-fancybox="gallery" href="{{ image.image_path }}" class="services__link" rel="services-all">
-		                <img src="{{ image.small_path }}" alt="{{ image.title }}" class="services__image">
-		            </a>
-		        </div>
-		    {% endfor %}
-		</div>
-	</section>
+    <h1 class="animation__main-title animation__main-title_no-margin">
+        Townhouse
+    </h1>
+
+    <div class="animation">
+        <div class="animation__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gas2RpAMr1Q" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="animation__buttons">
+            <div class="animation__buttons-group">
+                <div>
+                    <a href="https://drive.google.com/open?id=1GlHlNcGH8ONDLAagX09ksKrkN3xnlKCg" target="_blank"
+                       class="main-page__button main-page__button_animation-first">WIN x64</a>
+                </div>
+                <div>
+                    <a href="https://drive.google.com/open?id=1poXA4X8nPq2tnbAVK_zz6RSrtkzQlwUm" target="_blank"
+                       class="main-page__button">User Manual</a>
+                </div>
+            </div>
+            <div class="animation__share">
+                <span class="animation__share-text">Share</span>
+                {% include share-links-small.html %}
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-recomend">
+
+        <p class="animation-recomend__text">
+            This custom-designed townhouse lot balances elegant style and sleek
+            design using the finest materials throughout. No detail was overlooked
+            in the sophisticated well-designed floor plan that maximizes space,
+            scale and light and provides a flowing formal expanse.
+            Modern features include laminate and tile floors,
+            beamed ceilings, bay windows, skylights, through the wall air
+            conditioning system units, and top-of-the-line open floor
+            plan with a mezzanine. You are more than welcome to look around
+            and we promise you that you will be impressed by the quiet and lavish
+            surroundings.
+        </p>
+        <div class="animation-recomend__column animation-recomend__column_left">
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i5 8400/AMD RYZEN 5 2600 CPU, 16 GB RAM, Nvidia GeForce GTX 1060, 2Gb HDD space<br>
+                Windows 10 and higher x64 ONLY</p>
+            <h2 class="animation-recomend__title">Recommended:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2070, 2Gb HDD space</p>
+        </div>
+        <div class="animation-recomend__column">
+            <h2 class="animation-recomend__title">Oculus Rift/Dk2 and VR mode</h2>
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2080, 2Gb HDD space</p>
+        </div>
+
+    </div>
+
+
+
+    <h1 class="animation__main-title">
+        Brooklyn Apartment
+    </h1>
+
+    <div class="animation">
+        <div class="animation__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PtlYRXfIgVU" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="animation__buttons">
+            <div class="animation__buttons-group">
+                <div>
+                    <a href="https://drive.google.com/open?id=1DtnHs67303MDcKKyAdCpH66MeRwOvADA" target="_blank"
+                       class="main-page__button main-page__button_animation-first">WIN x64</a>
+                </div>
+                <!--<div>
+                  <a href="#" target="_blank" class="main-page__button">OS X</a>
+                </div> -->
+                <div>
+                    <a href="https://drive.google.com/open?id=1sWQgpeFD2pKrARo5V31KfkLcgjosjsn0" target="_blank"
+                       class="main-page__button">User Manual</a>
+                </div>
+            </div>
+            <div class="animation__share">
+                <span class="animation__share-text">Share</span>
+                {% include share-links-small.html %}
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-recomend">
+
+        <p class="animation-recomend__text">
+            With available tools and techniques like this, VR has a huge impact .
+            Immersion, a sense of technology is breathtaking. The ability
+            to transfer us to environments that enhance interaction, making objects
+            live, interactive. The fact that it exceeds physical limitations
+            is great. In combination with various social functions, technology
+            allows you to access anywhere and anytime.
+        </p>
+        <div class="animation-recomend__column animation-recomend__column_left">
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i5 8400/AMD RYZEN 5 2600 CPU, 16 GB RAM, Nvidia GeForce GTX
+                1060, 2Gb HDD space<br>
+                Windows 10 and higher x64 ONLY</p>
+            <h2 class="animation-recomend__title">Recommended:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX
+                2070, 2Gb HDD space</p>
+        </div>
+        <div class="animation-recomend__column">
+            <h2 class="animation-recomend__title">Oculus Rift/Dk2 and VR mode</h2>
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX
+                2080, 2Gb HDD space</p>
+        </div>
+
+    </div>
+
+
+
+    <h1 class="animation__main-title">
+        Apartment
+    </h1>
+
+    <div class="animation">
+        <div class="animation__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XHQOwXRFuh4" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="animation__buttons">
+            <div class="animation__buttons-group">
+                <div>
+                    <a href="https://drive.google.com/file/d/10yD4jvYmos0Q9OLYEbct_xqu0gKK8GOF/view" target="_blank"
+                       class="main-page__button main-page__button_animation-first">WIN x64</a>
+                </div>
+                <div>
+                    <a href="https://drive.google.com/open?id=1y6uzg2Clmq17ns2ZpmrvsNSsL_IQRW2d" target="_blank"
+                       class="main-page__button">OS X</a>
+                </div>
+                <div>
+                    <a href="https://drive.google.com/open?id=1rslimEHFyN_JFVK6oD0NgvLxyGB6nqx4" target="_blank"
+                       class="main-page__button">User Manual</a>
+                </div>
+            </div>
+            <div class="animation__share">
+                <span class="animation__share-text">Share</span>
+                {% include share-links-small.html %}
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-recomend">
+
+        <p class="animation-recomend__text">Experts and analysts of VR-industry team Polygonator converge in one
+            recommendation - VR-project solves a real problem or greatly facilitates / reduces the cost of existing and
+            working process!
+            Capitalizing on the latest in technology and marketing innovations software in Virtual Reality VR is a great
+            way to stay not steps but miles ahead of the competition. That’s where we can help.</p>
+        <div class="animation-recomend__column animation-recomend__column_left">
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i5 8400/AMD RYZEN 5 2600 CPU, 16 GB RAM, Nvidia GeForce GTX 1060, 2Gb HDD space<br>
+                Windows 10 and higher x64 ONLY</p>
+            <h2 class="animation-recomend__title">Recommended:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2070, 2Gb HDD space</p>
+        </div>
+        <div class="animation-recomend__column">
+            <h2 class="animation-recomend__title">Oculus Rift/Dk2 and VR mode</h2>
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2080, 2Gb HDD space</p>
+        </div>
+
+    </div>
+
+
+    <!-- NEW SERVICE ITEM BEGIN -->
+    <h1 class="animation__main-title">
+        Saint-Barth Villa Agat
+    </h1>
+
+    <div class="animation">
+        <div class="animation__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sPesXet99Gc" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="animation__buttons">
+            <div class="animation__buttons-group">
+            </div>
+            <div class="animation__share">
+                <span class="animation__share-text">Share</span>
+                {% include share-links-small.html %}
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-recomend">
+        <p class="animation-recomend__text"></p>
+        <div class="animation-recomend__column animation-recomend__column_left">
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i5 8400/AMD RYZEN 5 2600 CPU, 16 GB RAM, Nvidia GeForce GTX 1060<br>
+                Windows 10 and higher x64 ONLY</p>
+            <h2 class="animation-recomend__title">Recommended:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2070</p>
+        </div>
+        <div class="animation-recomend__column">
+            <h2 class="animation-recomend__title">Oculus Rift/Dk2 and VR mode</h2>
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2080</p>
+        </div>
+
+    </div>
+    <!-- NEW SERVICE ITEM END -->
+
+
+
+    <!-- NEW SERVICE ITEM BEGIN -->
+    <h1 class="animation__main-title">
+        RED7 apartments
+    </h1>
+
+    <div class="animation">
+        <div class="animation__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/m505Z4o89qA" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="animation__buttons">
+            <div class="animation__buttons-group">
+            </div>
+            <div class="animation__share">
+                <span class="animation__share-text">Share</span>
+                {% include share-links-small.html %}
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-recomend">
+        <p class="animation-recomend__text"></p>
+        <div class="animation-recomend__column animation-recomend__column_left">
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i5 8400/AMD RYZEN 5 2600 CPU, 16 GB RAM, Nvidia GeForce GTX 1060<br>
+                Windows 10 and higher x64 ONLY</p>
+            <h2 class="animation-recomend__title">Recommended:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2070</p>
+        </div>
+        <div class="animation-recomend__column">
+            <h2 class="animation-recomend__title">Oculus Rift/Dk2 and VR mode</h2>
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2080</p>
+        </div>
+
+    </div>
+    <!-- NEW SERVICE ITEM END -->
+
+
+
+
+    <!-- NEW SERVICE ITEM BEGIN -->
+    <h1 class="animation__main-title">
+        Fairmont | Vesper
+    </h1>
+
+    <div class="animation">
+        <div class="animation__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_s-D4BrbLt0" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="animation__buttons">
+            <div class="animation__buttons-group">
+            </div>
+            <div class="animation__share">
+                <span class="animation__share-text">Share</span>
+                {% include share-links-small.html %}
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-recomend">
+        <p class="animation-recomend__text"></p>
+        <div class="animation-recomend__column animation-recomend__column_left">
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i5 8400/AMD RYZEN 5 2600 CPU, 16 GB RAM, Nvidia GeForce GTX 1060<br>
+                Windows 10 and higher x64 ONLY</p>
+            <h2 class="animation-recomend__title">Recommended:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2070</p>
+        </div>
+        <div class="animation-recomend__column">
+            <h2 class="animation-recomend__title">Oculus Rift/Dk2 and VR mode</h2>
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2080</p>
+        </div>
+
+    </div>
+    <!-- NEW SERVICE ITEM END -->
+
+
+
+    <!-- NEW SERVICE ITEM BEGIN -->
+    <h1 class="animation__main-title">
+        Sambek heights
+    </h1>
+
+    <div class="animation">
+        <div class="animation__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/30ILGVd-a48" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="animation__buttons">
+            <div class="animation__buttons-group">
+            </div>
+            <div class="animation__share">
+                <span class="animation__share-text">Share</span>
+                {% include share-links-small.html %}
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-recomend">
+        <p class="animation-recomend__text"></p>
+        <div class="animation-recomend__column animation-recomend__column_left">
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i5 8400/AMD RYZEN 5 2600 CPU, 16 GB RAM, Nvidia GeForce GTX 1060<br>
+                Windows 10 and higher x64 ONLY</p>
+            <h2 class="animation-recomend__title">Recommended:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2070</p>
+        </div>
+        <div class="animation-recomend__column">
+            <h2 class="animation-recomend__title">Oculus Rift/Dk2 and VR mode</h2>
+            <h2 class="animation-recomend__title">Requirements:</h2>
+            <p class="animation-recomend__text">Intel core i7 9700/AMD RYZEN 7 2700 CPU, 16 GB RAM, Nvidia GeForce GTX 2080</p>
+        </div>
+
+    </div>
+    <!-- NEW SERVICE ITEM END -->
+
 </section>

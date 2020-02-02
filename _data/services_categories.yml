@@ -1,15 +1,9 @@
 - link: /services.html
-  name: All
-  menu_id: All
-- link: /interactive.html
   name: Interactive Tour
   menu_id: Interactive
-- link: /services-modelling.html
-  name: 3D Modelling
-  menu_id: Modelling 
-- link: /services-visialisation.html
-  name: Visualization
-  menu_id: Visualization
-- link: #
-  name: Animation
-  menu_id: Animation
+- link: /projects.html
+  name: Projects
+  menu_id: Projects
+- link: /virtual-simulators.html
+  name: Virtual simulators
+  menu_id: Virtual
